@@ -14,6 +14,8 @@ public class PlayerBehaviour : MonoBehaviour
     [Tooltip("Width of the bar.")]
     [SerializeField]private float size = 1;
     [Tooltip("Reference to the rigid body for the player (required).")]
+    [SerializeField]private GameObject ball = null;
+    [Tooltip("Reference to the Ball when attached to player (required).")]
     [SerializeField]private Rigidbody2D rigidBody = null;
 
     private Vector2 movement;
@@ -33,15 +35,21 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
+    private void FixedUpdate() {
         movement = GetInput();
+        movement *= speed * Time.fixedDeltaTime;
+        // Shoot Ball
+        if (ball is not null ) {
+            ball.GetComponent<Ball>().Velocity = movement;  // TODO: Optimize
+            if (Input.GetKey("space")) ShootBall();
+        }
+        
+        
         //TODO: Verify movement and how deltaTime is used, movement is not smooth
-        HandleMovement(movement * speed * Time.fixedDeltaTime);
+        HandleMovement(movement);
     }
 
-    private Vector2 GetInput()
-    {
+    private Vector2 GetInput() {
         Vector2 input = Vector2.zero;
         if (Input.GetKey("a")) // TODO: use input manager?
         {
@@ -53,11 +61,13 @@ public class PlayerBehaviour : MonoBehaviour
         }
         return input;
     }
+    
+    private void ShootBall() {
+        ball.GetComponent<Ball>().Velocity = new Vector2(1, 2).normalized; // TODO: Optimize
+        ball.transform.parent = null;
+    }
 
-    private void HandleMovement(Vector2 velocity)
-    {
+    private void HandleMovement(Vector2 velocity) {
         rigidBody.velocity = velocity;
     }
-    
-    
 }
