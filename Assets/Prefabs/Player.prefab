@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7114049942856595442}
-  - component: {fileID: 7114049942856595443}
   - component: {fileID: 7114049942856595340}
   - component: {fileID: 7114049942856595341}
   - component: {fileID: 7114049942856595342}
@@ -36,21 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7114049942856595443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7114049942856595343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97191c7d963fa4644bed7952d716ae06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 1
-  size: 1
-  speed: 100
 --- !u!114 &7114049942856595340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,6 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa8eb6a08f16454eb1e9738afeef127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
+  speed: 300
+  size: 1
+  rigidBody: {fileID: 7114049942856595342}
 --- !u!212 &7114049942856595341
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -130,7 +118,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
