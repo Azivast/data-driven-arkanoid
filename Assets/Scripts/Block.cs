@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    [SerializeField]private Color color = Color.blue;
-    [SerializeField]private int health = 1;
-    [SerializeField]private int pointValue = 1;
-    [SerializeField]private bool destructible = true;
-    [SerializeField]private GameObject powerUp = null;
+    public BlockType type;
+
+    private void OnValidate() {
+        if (type is null) Debug.LogError("Block type cannot be null");
+    }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if (other.gameObject.tag == "ball") {
+        if (other.gameObject.CompareTag("ball")) {
             BlockHit(); 
         }
     }
 
     private void BlockHit() { // TODO: Implement damage value from ball ?
-        if (destructible) Destroy(this.gameObject);
+        if (type.Destructible) Destroy(this.gameObject);
     }
 }

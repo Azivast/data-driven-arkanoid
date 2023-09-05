@@ -16,11 +16,19 @@ public class Ball : MonoBehaviour
         get => velocity;
         set => velocity = value.normalized * speed;
     }
+    
+    private void OnValidate() {
+        if (rigidBody is null) Debug.LogError("Sprite cannot be null");
+        if (speed < 0) {
+            speed = 0;
+            Debug.LogWarning("Speed must be a non negative number");
+        }
+    }
+    
     void FixedUpdate() {
         rigidBody.velocity = velocity;
     }
 
-    
     private void OnCollisionEnter2D(Collision2D other)
     {
         Vector2 newDirection;

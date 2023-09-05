@@ -30,7 +30,6 @@ public class PlayerBehaviour : MonoBehaviour
             Debug.LogWarning("Speed must be a non negative number");
         }
         if (rigidBody is null) {
-            speed = 0;
             Debug.LogWarning("Rigidbody cannot be null");
         }
     }
@@ -65,6 +64,7 @@ public class PlayerBehaviour : MonoBehaviour
     private void ShootBall() {
         ball.GetComponent<Ball>().Velocity = new Vector2(1, 2).normalized; // TODO: Optimize
         ball.transform.parent = null;
+        ball = null;
     }
 
     private void HandleMovement(Vector2 velocity) {

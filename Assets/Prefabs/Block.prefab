@@ -46,11 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a365906e7b473f45927f2ceea0528f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0, g: 0, b: 0, a: 0}
-  health: 1
-  pointValue: 1
-  destructible: 1
-  powerUp: {fileID: 0}
+  type: {fileID: 11400000, guid: 658694da267ae564ebe2132d7337f85d, type: 2}
 --- !u!212 &8510572631597624548
 SpriteRenderer:
   m_ObjectHideFlags: 0
