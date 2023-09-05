@@ -1,0 +1,1 @@
+Använde scriptable objects till power ups i början men blev för rörigt. Bättre att använda prefabs och ha variabler som visas i konsktruktorn.
