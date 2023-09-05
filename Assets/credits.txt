@@ -1,1 +1,1 @@
-textures: https://opengameart.org/content/arkanoid-assets (cc0)
+textures: https://opengameart.org/content/breakout-brick-breaker-tile-set-free (cc0)

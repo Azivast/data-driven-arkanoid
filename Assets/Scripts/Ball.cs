@@ -37,6 +37,7 @@ public class Ball : MonoBehaviour
         if (other.gameObject.tag == "player")
         {
             newDirection = transform.position - other.transform.position;
+            newDirection += Vector2.up; // Make ball always move a little more up than horizontal
             velocity = newDirection.normalized * speed;
             return;
         }

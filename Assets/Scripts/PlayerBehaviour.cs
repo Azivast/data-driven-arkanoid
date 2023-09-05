@@ -2,21 +2,28 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class PlayerBehaviour : MonoBehaviour
 {
     [Tooltip("The number of balls the player can lose before the game is over. (Minimum: 1)")]
     [SerializeField]private int health = 3;
     [Tooltip("Movement speed (non negative value).")]
     [SerializeField]private float speed = 1;
-    [Tooltip("Width of the bar.")]
-    [SerializeField]private float size = 1;
-    [Tooltip("Reference to the rigid body for the player (required).")]
+    [Tooltip("Initial Width of the bar.")]
+    public float InitialSize = 1;
+    [Tooltip("Reference to the rigid body(required).")]
     [SerializeField]private GameObject ball = null;
-    [Tooltip("Reference to the Ball when attached to player (required).")]
+    [Tooltip("Reference to the Ball when attached to player")]
     [SerializeField]private Rigidbody2D rigidBody = null;
+    [Tooltip("Reference to the Collider(required).")]
+    [SerializeField]private BoxCollider2D boxCollider;
+    [Tooltip("Reference to the Renderer(required).")]
+    [SerializeField]private SpriteRenderer spriteRenderer;
 
     private Vector2 movement;
 
@@ -29,9 +36,15 @@ public class PlayerBehaviour : MonoBehaviour
             speed = 0;
             Debug.LogWarning("Speed must be a non negative number");
         }
+        if (InitialSize < 1) {
+            InitialSize = 1;
+            Debug.LogWarning("Size must not be smaller than 1.");
+        }
         if (rigidBody is null) {
             Debug.LogWarning("Rigidbody cannot be null");
         }
+        
+        SetSize(InitialSize);
     }
 
     private void FixedUpdate() {
@@ -65,6 +78,10 @@ public class PlayerBehaviour : MonoBehaviour
         ball.GetComponent<Ball>().Velocity = new Vector2(1, 2).normalized; // TODO: Optimize
         ball.transform.parent = null;
         ball = null;
+    } 
+    public void SetSize(float size) {
+        spriteRenderer.size = new Vector2(size, spriteRenderer.size.y);
+        boxCollider.size = new Vector2(size, boxCollider.size.y);
     }
 
     private void HandleMovement(Vector2 velocity) {

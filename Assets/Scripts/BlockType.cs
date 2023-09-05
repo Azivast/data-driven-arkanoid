@@ -10,11 +10,10 @@ public class BlockType : ScriptableObject
     public int Health = 1;
     public int PointValue = 1;
     public bool Destructible = true;
-    public GameObject PowerUp = null;
-    
+
     private void OnValidate() {
         if (Sprite is null) Debug.LogError("Sprite cannot be null");
-        
+
         if (Health < 1) {
             Health = 1;
             Debug.LogWarning("Health must not be 0 or a negative number.");
