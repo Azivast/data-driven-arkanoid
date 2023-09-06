@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2210896669998853463}
-  - component: {fileID: 2210896669998853460}
+  - component: {fileID: 6627041023427956501}
   - component: {fileID: 2210896669998853457}
   - component: {fileID: 5762277242151743153}
-  - component: {fileID: -4811921750693683552}
+  - component: {fileID: 6804466293696538271}
   m_Layer: 0
-  m_Name: Expand
+  m_Name: Laser
   m_TagString: powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2210896669998853460
+--- !u!114 &6627041023427956501
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,11 +44,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2210896669998853459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97bdb7c2322a24d46a7a301a5a299d57, type: 3}
+  m_Script: {fileID: 11500000, guid: 61b529f0ee8d1cc4db2f479a76f37a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   FallSpeed: 2
-  NewSize: 6
+  weapon: {fileID: 1493353783188774415, guid: bc92540df89677b4fb1b5a6d231fb4f4, type: 3}
 --- !u!212 &2210896669998853457
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -229104129, guid: 4aa4f17c4aa84b14a8dd699240d52b51, type: 3}
+  m_Sprite: {fileID: 1564656263, guid: 4aa4f17c4aa84b14a8dd699240d52b51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,7 +127,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.45, y: 0.66}
   m_EdgeRadius: 0
---- !u!50 &-4811921750693683552
+--- !u!50 &6804466293696538271
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0

@@ -16,5 +16,6 @@ Unity script reference: scriptable objects. Länk: https://docs.unity3d.com/Scri
 Unity manual: prefabs. Länk: https://docs.unity3d.com/Manual/Prefabs.html 
 Unity manual: instantiating prefabs at run time. Länk: https://docs.unity3d.com/Manual/InstantiatingPrefabs.html 
 Unite 2016: . Overthrowing the MonoBehaviour Tyranny in a Glorious Scriptable Object Revolution. Länk: https://youtu.be/6vmRwLYWNRo 
-https://strategywiki.org/wiki/Arkanoid/Gameplay
+Gameplay: https://strategywiki.org/wiki/Arkanoid/Gameplay
+Gameplay: https://www.youtube.com/watch?v=Th-Z6QQ5AOQ
 slider: https://docs.unity3d.com/ScriptReference/RangeAttribute.html

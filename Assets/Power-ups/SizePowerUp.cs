@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class SizePowerUp : PowerUpLogic
+public class SizePowerUp : PowerUp
 {
     [Tooltip("Width the player will get during the power up.")]
     public float NewSize;
     
-    protected override void OnValidate()
+    protected void OnValidate()
     {
         base.OnValidate();
         if (NewSize < 1) {
@@ -23,8 +23,8 @@ public class SizePowerUp : PowerUpLogic
         player.SetSize(NewSize);
     }
 
-    protected override void Remove(PlayerBehaviour player) {
-        base.Remove(player);
+    public override void Remove(PlayerBehaviour player) {
         player.SetSize(player.Size);
+        base.Remove(player);
     } 
 }

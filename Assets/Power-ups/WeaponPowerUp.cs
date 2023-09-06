@@ -2,17 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponPowerUp : PowerUpLogic
+public class WeaponPowerUp : PowerUp
 {
-    // Start is called before the first frame update
-    void Start()
+    [Tooltip("The weapon the player will get during the power up.")]
+    public GameObject weapon;
+
+    private GameObject weaponInstance;
+    
+    protected override void OnValidate()
     {
-        
+        base.OnValidate();
+        if (weapon is null) {
+            Debug.LogWarning("Weapon cannot be null.");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public override void PickUp(PlayerBehaviour player) {
+        base.PickUp(player);
+        weaponInstance = Instantiate(weapon, player.transform, false);
     }
+
+    public override void Remove(PlayerBehaviour player) {
+        Destroy(weaponInstance);
+        base.Remove(player);
+    } 
 }

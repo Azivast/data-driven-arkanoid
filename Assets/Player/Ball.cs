@@ -34,7 +34,7 @@ public class Ball : MonoBehaviour
         Vector2 newDirection;
         
         // Player collision
-        if (other.gameObject.tag == "player")
+        if (other.gameObject.CompareTag("player"))
         {
             newDirection = transform.position - other.transform.position;
             newDirection += Vector2.up; // Make ball always move a little more up than horizontal

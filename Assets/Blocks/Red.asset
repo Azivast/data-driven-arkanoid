@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c159f28bf0d4554f98d2a259d7ee5a1, type: 3}
-  m_Name: Orange
+  m_Name: Red
   m_EditorClassIdentifier: 
   Sprite: {fileID: 1395391060, guid: 4aa4f17c4aa84b14a8dd699240d52b51, type: 3}
-  Color: {r: 1, g: 0.56078434, b: 0, a: 1}
-  Value: 60
+  Color: {r: 1, g: 0, b: 0, a: 1}
+  Value: 90
   Health: 1
   Destructible: 1
-  ChanceOfPowerUp: 1
+  ChanceOfPowerUp: 50
   PowerUpSet: {fileID: 11400000, guid: 0471e694c4cbd9843b96fa75dbd5085a, type: 2}

@@ -10,10 +10,11 @@ using UnityEngine.U2D;
 public class Block : MonoBehaviour
 {
     public BlockType type;
-    public SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         SetSprite();
     }
 
@@ -39,7 +40,7 @@ public class Block : MonoBehaviour
         spriteRenderer.color = type.Color;
     }
 
-    private void BlockHit() { // TODO: Implement damage value from ball ?
+    public void BlockHit() { // TODO: Implement damage value from ball ?
         if (!type.Destructible) return;
         
         // Power-up drops
