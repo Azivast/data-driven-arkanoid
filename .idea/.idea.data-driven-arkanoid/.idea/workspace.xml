@@ -18,6 +18,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Block.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BlockType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BlockType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SizePowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SizePowerUp.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
     </list>
@@ -118,7 +120,7 @@
       <workItem from="1693913172090" duration="351000" />
       <workItem from="1693913536616" duration="11458000" />
       <workItem from="1693990484611" duration="96000" />
-      <workItem from="1693990689697" duration="3245000" />
+      <workItem from="1693990689697" duration="3636000" />
     </task>
     <servers />
   </component>
