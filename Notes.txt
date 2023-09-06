@@ -1,1 +1,19 @@
 Använde scriptable objects till power ups i början men blev för rörigt. Bättre att använda prefabs och ha variabler som visas i konsktruktorn.
+
+
+använd RequiredComponent
+ska finnas start och slut
+prefabs i prefabs
+scriptable
+bonuspoäng om man använder gizmos
+
+
+
+Har använt: 
+Föreläsning 2: datadriven programmering
+Unity script reference: tooltips. Länk: https://docs.unity3d.com/ScriptReference/TooltipAttribute.html 
+Unity script reference: scriptable objects. Länk: https://docs.unity3d.com/ScriptReference/ScriptableObject.html 
+Unity manual: prefabs. Länk: https://docs.unity3d.com/Manual/Prefabs.html 
+Unity manual: instantiating prefabs at run time. Länk: https://docs.unity3d.com/Manual/InstantiatingPrefabs.html 
+Unite 2016: . Overthrowing the MonoBehaviour Tyranny in a Glorious Scriptable Object Revolution. Länk: https://youtu.be/6vmRwLYWNRo 
+https://strategywiki.org/wiki/Arkanoid/Gameplay

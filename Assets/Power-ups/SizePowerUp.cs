@@ -25,6 +25,6 @@ public class SizePowerUp : PowerUpLogic
 
     protected override void Remove(PlayerBehaviour player) {
         base.Remove(player);
-        player.SetSize(player.InitialSize);
+        player.SetSize(player.Size);
     } 
 }

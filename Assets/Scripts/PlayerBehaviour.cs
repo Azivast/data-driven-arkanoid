@@ -15,7 +15,7 @@ public class PlayerBehaviour : MonoBehaviour
     [Tooltip("Movement speed (non negative value).")]
     [SerializeField]private float speed = 1;
     [Tooltip("Initial Width of the bar.")]
-    public float InitialSize = 1;
+    public float Size = 1;
     [Tooltip("Reference to the rigid body(required).")]
     [SerializeField]private GameObject ball = null;
     [Tooltip("Reference to the Ball when attached to player")]
@@ -36,15 +36,15 @@ public class PlayerBehaviour : MonoBehaviour
             speed = 0;
             Debug.LogWarning("Speed must be a non negative number");
         }
-        if (InitialSize < 1) {
-            InitialSize = 1;
+        if (Size < 1) {
+            Size = 1;
             Debug.LogWarning("Size must not be smaller than 1.");
         }
         if (rigidBody is null) {
             Debug.LogWarning("Rigidbody cannot be null");
         }
         
-        SetSize(InitialSize);
+        SetSize(Size);
     }
 
     private void FixedUpdate() {
