@@ -11,11 +11,13 @@ public class Block : MonoBehaviour
 {
     public BlockType type;
     private SpriteRenderer spriteRenderer;
+    private int hp;
 
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         SetSprite();
+        hp = type.Health;
     }
 
     private void OnValidate() {
@@ -42,6 +44,9 @@ public class Block : MonoBehaviour
 
     public void BlockHit() { // TODO: Implement damage value from ball ?
         if (!type.Destructible) return;
+
+        hp--;
+        if (hp > 0) return;
         
         // Power-up drops
         if (type.PowerUpSet is not null)
@@ -52,6 +57,7 @@ public class Block : MonoBehaviour
                 Instantiate(powerUp, transform.position, transform.rotation);
             }
         }
+        
         Destroy(this.gameObject);
     }
 }
