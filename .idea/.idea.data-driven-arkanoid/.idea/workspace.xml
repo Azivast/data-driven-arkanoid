@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdb37b80-0c1b-4ed6-ba1f-4809cb5ef93f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Block.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Block.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Blue.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Blue.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Cyan.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Cyan.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Blocks/Gold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Gold.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Ball.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Ball.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Ball.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Ball.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Green.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Green.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Orange.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Orange.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Purple.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Purple.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Red.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Red.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Silver.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Silver.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/White.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/White.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Yellow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Yellow.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sprites.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/sprites.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sprites.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/sprites.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,27 +36,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\a22ollas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\a22ollas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\a22ollas\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\a22ollas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\a22ollas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\a22ollas\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.24f1\Editor\Unity.exe" />
@@ -126,7 +126,7 @@
       <workItem from="1693913536616" duration="11458000" />
       <workItem from="1693990484611" duration="96000" />
       <workItem from="1693990689697" duration="3636000" />
-      <workItem from="1694009707906" duration="12911000" />
+      <workItem from="1694009707906" duration="13500000" />
     </task>
     <servers />
   </component>
