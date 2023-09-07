@@ -5,53 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdb37b80-0c1b-4ed6-ba1f-4809cb5ef93f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Block.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Block.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/BlockType.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/BlockType.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Blue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Blue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Cyan.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Cyan.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Gold.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Gold.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Green.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Green.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Orange.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Orange.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Purple.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Purple.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Red.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Red.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Silver.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Silver.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/White.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/White.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Yellow.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Block Types/Yellow.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/BallsPowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/BallsPowerUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/DefaultPowerUpSet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/DefaultPowerUpSet.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Expand.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Expand.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/PowerUpLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/PowerUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/PowerUpLogic.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/PowerUp.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/SizePowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/SizePowerUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/WeaponPowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/WeaponPowerUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ball.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Blue.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Blue.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Cyan.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Cyan.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Gold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Gold.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Green.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Green.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Orange.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Orange.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Purple.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Purple.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Red.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Red.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Silver.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Silver.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/White.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/White.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Yellow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Yellow.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +126,7 @@
       <workItem from="1693913536616" duration="11458000" />
       <workItem from="1693990484611" duration="96000" />
       <workItem from="1693990689697" duration="3636000" />
-      <workItem from="1694009707906" duration="12911000" />
+      <workItem from="1694009707906" duration="13500000" />
     </task>
     <servers />
   </component>

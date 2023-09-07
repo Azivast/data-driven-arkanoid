@@ -17,5 +17,5 @@ MonoBehaviour:
   Value: 1
   Health: 1
   Destructible: 0
-  ChanceOfPowerUp: 50
+  ChanceOfPowerUp: 10
   PowerUpSet: {fileID: 0}
