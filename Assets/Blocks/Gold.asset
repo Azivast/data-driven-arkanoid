@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gold
   m_EditorClassIdentifier: 
   Sprite: {fileID: -2003557183, guid: e883f97c0cac4194b815151740b5cde5, type: 3}
-  Color: {r: 0.21568629, g: 0.21568629, b: 0.21568629, a: 1}
+  Color: {r: 0.6226415, g: 0.46447942, b: 0, a: 1}
   Value: 1
   Health: 1
   Destructible: 0
