@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4aa4f17c4aa84b14a8dd699240d52b51
+guid: e883f97c0cac4194b815151740b5cde5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,169 +129,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Breakout_Tile_Free_0
-      rect:
-        serializedVersion: 2
-        x: 771
-        y: 500
-        width: 5
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd03f27feafa530458e4ca07aa307865
-      internalID: 1366305970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Block
       rect:
         serializedVersion: 2
-        x: 771
-        y: 375
-        width: 386
-        height: 130
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f21f07d7fee9b24cbbafef8b1096be4
-      internalID: 1395391060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PowerUp Balls
-      rect:
-        serializedVersion: 2
-        x: 593
-        y: 49
-        width: 245
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7d8e5bed1cc93b45add98f593e23cd9
-      internalID: -1850109020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player
-      rect:
-        serializedVersion: 2
-        x: 1573
-        y: 47
-        width: 117
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 47, y: 0, z: 47, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92a8e6f060ca50448875c10f649b76f7
-      internalID: -1224279371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PowerUp Shrink
-      rect:
-        serializedVersion: 2
-        x: 1157
-        y: 761
-        width: 245
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6127cb5b7a071e04daeca387677022ff
-      internalID: 1189897438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PowerUp Expand
-      rect:
-        serializedVersion: 2
-        x: 1157
-        y: 695
-        width: 245
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5181207be12847045b63d9fc10e15008
-      internalID: -229104129
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Projectile
-      rect:
-        serializedVersion: 2
         x: 0
-        y: 12
-        width: 11
-        height: 23
+        y: 243
+        width: 27
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc867468bee3e904188d0cbaf17a8fe5
-      internalID: 1408558301
+      spriteID: 5ffd4472d4784c340a6dec3e248201fb
+      internalID: -459615618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PowerUp Weapon
+      name: Block Indestructible
       rect:
         serializedVersion: 2
-        x: 1261
-        y: 233
-        width: 245
-        height: 66
+        x: 27
+        y: 243
+        width: 27
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fe152da8c565c24bac1a300a760c0b1
-      internalID: 1564656263
+      spriteID: 09ff4a5fb920fc84b994d00d58d0a9e6
+      internalID: -2003557183
       vertices: []
       indices: 
       edges: []
@@ -300,19 +174,124 @@ TextureImporter:
       name: Ball
       rect:
         serializedVersion: 2
-        x: 1402
-        y: 307
-        width: 66
-        height: 66
+        x: 0
+        y: 234
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 298e5510fefc87b4fac81ccd656ec8de
-      internalID: -1524851136
+      spriteID: 3202d9c27a2615942b608599a04f8044
+      internalID: -1527308640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HP
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 225
+        width: 30
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12469361fec30a4a931db37c94cbf2d
+      internalID: 1698655484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 221
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 9, y: 0, z: 9, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61550afd8c0b3924e98cb624df7f28dd
+      internalID: -1291001155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power-up Capsule
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 207
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283b7d7530e1143419f300cfb2262c72
+      internalID: -895572241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Edge Vertical
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 179
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbb760b2fa6a914dad468e81728dbad
+      internalID: -772041948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Edge Horizontal
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 193
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5868cacf7aaa27448b9ad7f63d670526
+      internalID: -516569139
       vertices: []
       indices: 
       edges: []
@@ -328,15 +307,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ball: -1524851136
-      Block: 1395391060
-      Breakout_Tile_Free_0: 1366305970
-      Player: -1224279371
-      PowerUp Balls: -1850109020
-      PowerUp Expand: -229104129
-      PowerUp Shrink: 1189897438
-      PowerUp Weapon: 1564656263
-      Projectile: 1408558301
+      Ball: -1527308640
+      Block: -459615618
+      Block Indestructible: -2003557183
+      HP: 1698655484
+      Level Edge Horizontal: -516569139
+      Level Edge Vertical: -772041948
+      Player: -1291001155
+      Power-up Capsule: -895572241
+      sprites_0: 900984761
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   speed: 500
-  Size: 1
+  Size: 0.5
   ball: {fileID: 7114049943177566713}
   rigidBody: {fileID: 7114049942856595342}
   boxCollider: {fileID: 6656360919929614737}
@@ -131,12 +131,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1224279371, guid: 4aa4f17c4aa84b14a8dd699240d52b51, type: 3}
+  m_Sprite: {fileID: -1291001155, guid: e883f97c0cac4194b815151740b5cde5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 1, y: 0.66}
+  m_Size: {x: 0.5, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -157,16 +157,16 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.47, y: 0, z: 0.47, w: 0}
+    border: {x: 0.089999996, y: 0, z: 0.089999996, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.17, y: 0.66}
-    newSize: {x: 1, y: 0.66}
+    oldSize: {x: 0.22, y: 0.12}
+    newSize: {x: 0.5, y: 0.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.66}
+  m_Size: {x: 0.5, y: 0.12}
   m_EdgeRadius: 0
 --- !u!1001 &925349351295365335
 PrefabInstance:
@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7957208455207823657, guid: 4257729d37046b04c8052b970228209e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7957208455207823657, guid: 4257729d37046b04c8052b970228209e, type: 3}
       propertyPath: m_LocalPosition.z

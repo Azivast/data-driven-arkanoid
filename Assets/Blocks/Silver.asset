@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c159f28bf0d4554f98d2a259d7ee5a1, type: 3}
   m_Name: Silver
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 1395391060, guid: 4aa4f17c4aa84b14a8dd699240d52b51, type: 3}
-  Color: {r: 0.6156863, g: 0.6156863, b: 0.6156863, a: 1}
+  Sprite: {fileID: -2003557183, guid: e883f97c0cac4194b815151740b5cde5, type: 3}
+  Color: {r: 0.21568629, g: 0.21568629, b: 0.21568629, a: 1}
   Value: 250
   Health: 2
   Destructible: 1

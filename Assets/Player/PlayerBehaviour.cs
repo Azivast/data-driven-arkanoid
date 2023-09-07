@@ -36,9 +36,9 @@ public class PlayerBehaviour : MonoBehaviour
             speed = 0;
             Debug.LogWarning("Speed must be a non negative number");
         }
-        if (Size < 1) {
+        if (Size < 0) {
             Size = 1;
-            Debug.LogWarning("Size must not be smaller than 1.");
+            Debug.LogWarning("Size must be a non negative number.");
         }
         if (rigidBody is null) {
             Debug.LogWarning("Rigidbody cannot be null");
@@ -75,7 +75,7 @@ public class PlayerBehaviour : MonoBehaviour
     }
     
     private void ShootBall() {
-        ball.GetComponent<Ball>().Velocity = new Vector2(1, 2).normalized; // TODO: Optimize
+        ball.GetComponent<Ball>().Velocity = new Vector2(1, 2).normalized * Time.fixedDeltaTime; // TODO: Optimize
         ball.transform.parent = null;
         ball = null;
     } 
