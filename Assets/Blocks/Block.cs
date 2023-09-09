@@ -26,7 +26,7 @@ public class Block : MonoBehaviour {
         SetSprite();
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnCollisionExit2D(Collision2D other) {
         if (other.gameObject.CompareTag("ball")) {
             BlockHit();
         }

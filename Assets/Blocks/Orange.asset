@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c159f28bf0d4554f98d2a259d7ee5a1, type: 3}
   m_Name: Orange
   m_EditorClassIdentifier: 
-  Sprite: {fileID: -459615618, guid: e883f97c0cac4194b815151740b5cde5, type: 3}
-  Color: {r: 1, g: 0.56078434, b: 0, a: 1}
+  Sprite: {fileID: 1721937300, guid: e883f97c0cac4194b815151740b5cde5, type: 3}
+  Color: {r: 1, g: 1, b: 1, a: 1}
   Value: 60
   Health: 1
   Destructible: 1

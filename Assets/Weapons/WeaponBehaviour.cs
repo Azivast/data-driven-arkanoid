@@ -38,7 +38,7 @@ public class WeaponBehaviour : MonoBehaviour
         {
             Gizmos.DrawRay(position.position, position.up);
             Gizmos.color = new Color(256, 256, 256, 70);
-            Gizmos.DrawSphere(position.position, 0.25f);
+            Gizmos.DrawSphere(position.position, 0.1f);
         }
     }
 }

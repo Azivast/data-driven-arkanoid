@@ -237,7 +237,7 @@ TextureImporter:
       name: Power-up Capsule
       rect:
         serializedVersion: 2
-        x: 1
+        x: 27
         y: 207
         width: 25
         height: 13
@@ -250,48 +250,6 @@ TextureImporter:
       bones: []
       spriteID: 283b7d7530e1143419f300cfb2262c72
       internalID: -895572241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Edge Vertical
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 179
-        width: 13
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebbb760b2fa6a914dad468e81728dbad
-      internalID: -772041948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level Edge Horizontal
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 193
-        width: 27
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5868cacf7aaa27448b9ad7f63d670526
-      internalID: -516569139
       vertices: []
       indices: 
       edges: []
@@ -326,7 +284,7 @@ TextureImporter:
         width: 7
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -334,6 +292,426 @@ TextureImporter:
       bones: []
       spriteID: 75451bfebd2373d48ae3b0d8dc8bf3db
       internalID: -450706891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background tile
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cb915a7acdd3547ae4e157595fab6c
+      internalID: -1129021274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power-up Disruption
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 193
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947eff6579d5a21458b8aaf99abadb8f
+      internalID: -600402790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power-up Enlarge
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 179
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39584449a1aaaa46abbe25c3d99ae33
+      internalID: 663984331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: block silver
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 246
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd9cb65370f68348b00f5464b65b7cc
+      internalID: 656883781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: block gold
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 235
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3929c7d6c06bf79488703cff0ba6f326
+      internalID: -968890245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: block white
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 224
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87de9f3e6409f3499d60fcc8e4c77ff
+      internalID: -509169147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: block orange
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 213
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89411625bcdf23c409a48dcdf0fbd394
+      internalID: 1721937300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: block cyan
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 202
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4633cbe678ad1488f87fef8bd59294
+      internalID: 1931489268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: block green
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 191
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbb044ed853cdd42981ca949f51f8a4
+      internalID: 363952810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: block red
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 180
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1fcf6e89dd4314eaa936a5e0f55059
+      internalID: -400976534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: block blue
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 169
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091e022f1545e6240896f064cf260851
+      internalID: 1498138325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: block yellow
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 147
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbb2ddf86c9dd144af4eb0a9908a321
+      internalID: -1219528661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: edge1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 160
+        width: 9
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38a4ed2a9edd054eb29de008426fe00
+      internalID: -1349222771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: edge2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 196
+        width: 13
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfd3d0f21e8d5446a06b01ba0ab848a
+      internalID: 363696927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: edge3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 234
+        width: 45
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d8ee9cbaa06f34e97fa4b0e7e574a6
+      internalID: 511339845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: edge4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 243
+        width: 38
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4458318091e6974f806fe99ff559be2
+      internalID: 2038075730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: edge5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 245
+        width: 36
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961c83acbbfe8454aa199c15046b3a6b
+      internalID: 1485466188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: edge6
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 234
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5e58c506859284ea17542ba3a005c3
+      internalID: -1608936041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power-up Laser
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 207
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9624bffa2a3b948b4965b639bb1ca0
+      internalID: -1758530454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: block purple
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 158
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0beb830b0e3cd4088b48df92ed8007
+      internalID: 777132430
       vertices: []
       indices: 
       edges: []
@@ -357,7 +735,27 @@ TextureImporter:
       Level Edge Vertical: -772041948
       Player: -1291001155
       Power-up Capsule: -895572241
+      Power-up Disruption: -600402790
+      Power-up Enlarge: 663984331
+      Power-up Laser: -1758530454
+      background tile: -1129021274
+      block blue: 1498138325
+      block cyan: 1931489268
+      block gold: -968890245
+      block green: 363952810
+      block orange: 1721937300
+      block purple: 777132430
+      block red: -400976534
+      block silver: 656883781
+      block white: -509169147
+      block yellow: -1219528661
       cannon: -450706891
+      edge1: -1349222771
+      edge2: 363696927
+      edge3: 511339845
+      edge4: 2038075730
+      edge5: 1485466188
+      edge6: -1608936041
       laser: 900984761
   spritePackingTag: 
   pSDRemoveMatte: 0

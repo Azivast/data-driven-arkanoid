@@ -6,38 +6,35 @@
   <component name="ChangeListManager">
     <list default="true" id="fdb37b80-0c1b-4ed6-ba1f-4809cb5ef93f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ball/Ball.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ball/Ball.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Blocks/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Block.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Blocks/Block.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Block.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Blue.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Blue.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Cyan.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Cyan.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Gold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Gold.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Green.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Green.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Orange.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Orange.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Purple.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Purple.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Red.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Red.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Silver.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Silver.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/White.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/White.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Blocks/Yellow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Yellow.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Border Horizontal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Border Horizontal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Border Vertical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Border Vertical.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerPowerUpHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerPowerUpHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/BallsPowerUp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/BallsPowerUp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/DefaultPowerUpSet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/DefaultPowerUpSet.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Expand.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Expand.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Laser.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Laser.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/PowerUp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/PowerUp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/PowerUpSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/PowerUpSet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/SizePowerUp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/SizePowerUp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/WeaponPowerUp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/WeaponPowerUp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Projectiles/LaserProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Projectiles/LaserProjectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Projectiles/ProjectileBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Projectiles/ProjectileBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Disruption Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Disruption Capsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Enlarge Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Enlarge Capsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Laser Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Laser Capsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/PowerupCapsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/PowerupCapsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/sprites.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/sprites.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/sprites.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/sprites.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Weapons/LaserWeapon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Weapons/LaserWeapon.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Weapons/WeaponBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Weapons/WeaponBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +48,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Projectiles/ProjectileBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/Buttons/ChangeSceneButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/Buttons/QuitButton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -151,7 +150,7 @@
       <workItem from="1693990484611" duration="96000" />
       <workItem from="1693990689697" duration="3636000" />
       <workItem from="1694009707906" duration="13500000" />
-      <workItem from="1694278150231" duration="8825000" />
+      <workItem from="1694278150231" duration="13701000" />
     </task>
     <servers />
   </component>

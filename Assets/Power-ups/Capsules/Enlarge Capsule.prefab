@@ -40,16 +40,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 3482949183673175987}
     m_Modifications:
     - target: {fileID: 2210896669998853457, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 663984331, guid: e883f97c0cac4194b815151740b5cde5, type: 3}
+    - target: {fileID: 2210896669998853457, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2210896669998853457, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2210896669998853457, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
       propertyPath: m_Color.r
-      value: 0.0380435
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2210896669998853459, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
       propertyPath: m_Name
@@ -61,11 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2210896669998853463, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.97
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2210896669998853463, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2210896669998853463, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -105,11 +109,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8494884618227481767, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
       propertyPath: Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8494884618227481767, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
       propertyPath: Color.r
-      value: 0.0380435
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8494884618227481767, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
       propertyPath: Powerup
