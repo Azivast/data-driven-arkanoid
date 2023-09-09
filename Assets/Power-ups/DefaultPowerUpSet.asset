@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7c57c9dec0ba4249a4d9304c17b9467, type: 3}
   m_Name: DefaultPowerUpSet
   m_EditorClassIdentifier: 
-  PowerUps:
-  - {fileID: 2210896669998853459, guid: 5c234eeb20a41654aad3b3ab36491b73, type: 3}
-  - {fileID: 2210896669998853459, guid: 1c34751150c06f5489236d65857560a0, type: 3}
+  PowerupCapsules:
+  - {fileID: 3492235645933566660, guid: 530e5a745ba671840b874c2d4b059c22, type: 3}
+  - {fileID: 3492235645933566660, guid: f09798ec06c4dd74ea11bffdf8e56507, type: 3}
+  - {fileID: 3492235645933566660, guid: 8e990d81cc95dfd40bb70b8c8693c8a2, type: 3}

@@ -42,8 +42,13 @@ public class Ball : MonoBehaviour
             return;
         }
         
-        // Other collisions
-        Vector2 collisionNormal = other.contacts[0].normal; // Todo check against more than just [0] ?
+        // Other collisions TODO: This is a bit broken?
+        Vector2 collisionNormal = new Vector2();
+        foreach (ContactPoint2D contact in other.contacts) {
+            collisionNormal += contact.normal;
+        }
+        collisionNormal.Normalize();
+        
         newDirection = Vector2.Reflect(velocity, collisionNormal);
         velocity = newDirection.normalized* speed;
     }

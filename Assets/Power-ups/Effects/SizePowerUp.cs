@@ -4,27 +4,25 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class SizePowerUp : PowerUp
-{
+public class SizePowerUp : MonoBehaviour {
     [Tooltip("Width the player will get during the power up.")]
     public float NewSize;
-    
-    protected void OnValidate()
-    {
-        base.OnValidate();
+
+    private PlayerBehaviour player;
+
+    void OnValidate() {
         if (NewSize < 1) {
             Debug.LogWarning("New size cannot be below 1.");
             NewSize = 1;
         }
     }
 
-    public override void PickUp(PlayerBehaviour player) {
-        base.PickUp(player);
+    void OnEnable() {
+        player = GetComponentInParent<PlayerBehaviour>();
         player.SetSize(NewSize);
     }
 
-    public override void Remove(PlayerBehaviour player) {
+    void OnDisable() {
         player.SetSize(player.Size);
-        base.Remove(player);
-    } 
+    }
 }

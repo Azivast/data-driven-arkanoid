@@ -2,28 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponPowerUp : PowerUp
-{
+public class WeaponPowerUp : MonoBehaviour {
     [Tooltip("The weapon the player will get during the power up.")]
     public GameObject weapon;
 
     private GameObject weaponInstance;
-    
-    protected override void OnValidate()
-    {
-        base.OnValidate();
+    private PlayerBehaviour player;
+
+    void OnValidate() {
         if (weapon is null) {
-            Debug.LogWarning("Weapon cannot be null.");
+            Debug.LogError("Weapon cannot be null.");
         }
     }
 
-    public override void PickUp(PlayerBehaviour player) {
-        base.PickUp(player);
+    void OnEnable() {
+        player = GetComponentInParent<PlayerBehaviour>();
         weaponInstance = Instantiate(weapon, player.transform, false);
     }
 
-    public override void Remove(PlayerBehaviour player) {
+    void OnDisable() {
         Destroy(weaponInstance);
-        base.Remove(player);
-    } 
+    }
 }

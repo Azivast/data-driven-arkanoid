@@ -37,6 +37,7 @@ public class WeaponBehaviour : MonoBehaviour
         foreach (Transform position in FiringPositions)
         {
             Gizmos.DrawRay(position.position, position.up);
+            Gizmos.color = new Color(256, 256, 256, 70);
             Gizmos.DrawSphere(position.position, 0.25f);
         }
     }

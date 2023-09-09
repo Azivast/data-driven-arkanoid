@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
@@ -9,17 +10,14 @@ public class ProjectileBehaviour : MonoBehaviour
 {
     public int Speed;
 
-    private void FixedUpdate()
-    {
+    private void FixedUpdate() {
         transform.position += transform.up * (Speed * Time.fixedDeltaTime);
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.CompareTag("block"))
-        {
+    private void OnCollisionEnter2D(Collision2D col) {
+        if (col.collider.CompareTag("block")) {
             col.gameObject.GetComponent<Block>().BlockHit();
-            Destroy(this.gameObject);
         }
+        Destroy(this.gameObject);
     }
 }

@@ -9,12 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2210896669998853463}
-  - component: {fileID: 2210896669998853460}
+  - component: {fileID: 8494884618227481767}
   - component: {fileID: 2210896669998853457}
   - component: {fileID: 5762277242151743153}
-  m_Layer: 0
-  m_Name: Expand
-  m_TagString: powerup
+  - component: {fileID: -1231139377638443155}
+  m_Layer: 6
+  m_Name: PowerupCapsule
+  m_TagString: powerupCapsule
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2210896669998853460
+--- !u!114 &8494884618227481767
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,11 +44,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2210896669998853459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97bdb7c2322a24d46a7a301a5a299d57, type: 3}
+  m_Script: {fileID: 11500000, guid: 56d69e77f761d7e4db11aed8f09d7bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   FallSpeed: 2
-  NewSize: 6
+  Color: {r: 1, g: 1, b: 1, a: 1}
+  Powerup: {fileID: 0}
 --- !u!212 &2210896669998853457
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89,12 +91,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -229104129, guid: 4aa4f17c4aa84b14a8dd699240d52b51, type: 3}
+  m_Sprite: {fileID: -895572241, guid: e883f97c0cac4194b815151740b5cde5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.52}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -107,7 +109,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2210896669998853459}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -117,12 +119,33 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.45, y: 0.66}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 0.52}
+    newSize: {x: 1, y: 0.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.45, y: 0.66}
+  m_Size: {x: 1, y: 0.52}
   m_EdgeRadius: 0
+--- !u!50 &-1231139377638443155
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2210896669998853459}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

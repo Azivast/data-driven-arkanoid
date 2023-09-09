@@ -217,9 +217,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 221
+        y: 223
         width: 22
-        height: 12
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 9, y: 0, z: 9, w: 0}
@@ -296,6 +296,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: laser
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 234
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07de39955e1edc3449d445f6e380aac5
+      internalID: -1336526273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cannon
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 236
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75451bfebd2373d48ae3b0d8dc8bf3db
+      internalID: -450706891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -315,7 +357,8 @@ TextureImporter:
       Level Edge Vertical: -772041948
       Player: -1291001155
       Power-up Capsule: -895572241
-      sprites_0: 900984761
+      cannon: -450706891
+      laser: 900984761
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -8,22 +8,30 @@ using UnityEngine.UIElements;
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
-public class PlayerBehaviour : MonoBehaviour
-{
-    [Tooltip("The number of balls the player can lose before the game is over. (Minimum: 1)")]
-    [SerializeField]private int health = 3;
-    [Tooltip("Movement speed (non negative value).")]
-    [SerializeField]private float speed = 1;
+public class PlayerBehaviour : MonoBehaviour {
+    [Tooltip("The number of balls the player can lose before the game is over. (Minimum: 1)")] [SerializeField]
+    private int health = 3;
+
+    [Tooltip("Movement speed (non negative value).")] [SerializeField]
+    private float speed = 1;
+
     [Tooltip("Initial Width of the bar.")]
     public float Size = 1;
-    [Tooltip("Reference to the rigid body(required).")]
-    [SerializeField]private GameObject ball = null;
-    [Tooltip("Reference to the Ball when attached to player")]
-    [SerializeField]private Rigidbody2D rigidBody = null;
-    [Tooltip("Reference to the Collider(required).")]
-    [SerializeField]private BoxCollider2D boxCollider;
-    [Tooltip("Reference to the Renderer(required).")]
-    [SerializeField]private SpriteRenderer spriteRenderer;
+
+    [Tooltip("Reference to the rigid body(required).")] [SerializeField]
+    private GameObject ball = null;
+    
+    [Tooltip("Direction in which ball is fired at start.")] [SerializeField]
+    private Vector2 ballFiringDirection = new Vector2(1, 2);
+
+    [Tooltip("Reference to the Ball when attached to player")] [SerializeField]
+    private Rigidbody2D rigidBody = null;
+
+    [Tooltip("Reference to the Collider(required).")] [SerializeField]
+    private BoxCollider2D boxCollider;
+
+    [Tooltip("Reference to the Renderer(required).")] [SerializeField]
+    private SpriteRenderer spriteRenderer;
 
     private Vector2 movement;
 
@@ -32,18 +40,25 @@ public class PlayerBehaviour : MonoBehaviour
             health = 1;
             Debug.LogWarning("Health can not be 0 or a negative number.");
         }
+
         if (speed < 0) {
             speed = 0;
             Debug.LogWarning("Speed must be a non negative number");
         }
+
         if (Size < 0) {
             Size = 1;
             Debug.LogWarning("Size must be a non negative number.");
         }
+
         if (rigidBody is null) {
             Debug.LogWarning("Rigidbody cannot be null");
         }
         
+        Start();
+    }
+
+    private void Start() {
         SetSize(Size);
     }
 
@@ -51,12 +66,13 @@ public class PlayerBehaviour : MonoBehaviour
         movement = GetInput();
         movement *= speed * Time.fixedDeltaTime;
         // Shoot Ball
-        if (ball is not null ) {
-            ball.GetComponent<Ball>().Velocity = movement;  // TODO: Optimize
+        if (ball is not null) {
+            //ball.GetComponent<Ball>().Velocity = Vector2.zero;  // TODO: Optimize
+            ball.transform.position = new Vector3(transform.position.x, ball.transform.position.y);
             if (Input.GetKey("space")) ShootBall();
         }
-        
-        
+
+
         //TODO: Verify movement and how deltaTime is used, movement is not smooth
         HandleMovement(movement);
     }
@@ -67,18 +83,20 @@ public class PlayerBehaviour : MonoBehaviour
         {
             input += Vector2.left;
         }
-        if (Input.GetKey("d"))
-        {
+
+        if (Input.GetKey("d")) {
             input += Vector2.right;
         }
+
         return input;
     }
-    
+
     private void ShootBall() {
-        ball.GetComponent<Ball>().Velocity = new Vector2(1, 2).normalized * Time.fixedDeltaTime; // TODO: Optimize
+        ball.GetComponent<Ball>().Velocity = ballFiringDirection.normalized * Time.fixedDeltaTime; // TODO: Optimize
         ball.transform.parent = null;
         ball = null;
-    } 
+    }
+
     public void SetSize(float size) {
         spriteRenderer.size = new Vector2(size, spriteRenderer.size.y);
         boxCollider.size = new Vector2(size, boxCollider.size.y);

@@ -7,7 +7,7 @@ TagManager:
   - block
   - ball
   - player
-  - powerup
+  - powerupCapsule
   layers:
   - Default
   - TransparentFX
@@ -15,10 +15,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Power-ups
+  - Projectiles
+  - Player
+  - Balls
   - 
   - 
   - 
