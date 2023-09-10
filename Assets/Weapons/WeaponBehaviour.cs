@@ -9,6 +9,7 @@ public class WeaponBehaviour : MonoBehaviour
     public float FireRate;
     public GameObject Projectile;
     public Transform[] FiringPositions;
+    public AudioSource firingSound;
     
     private float timer = 0;
     private bool counting = false;
@@ -30,6 +31,7 @@ public class WeaponBehaviour : MonoBehaviour
         }
         counting = true;
         timer = FireRate;
+        firingSound.Play();
     }
 
     private void OnDrawGizmos()

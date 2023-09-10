@@ -19,3 +19,4 @@ MonoBehaviour:
   Destructible: 1
   ChanceOfPowerUp: 10
   PowerUpSet: {fileID: 11400000, guid: 0471e694c4cbd9843b96fa75dbd5085a, type: 2}
+  HitSound: {fileID: 8300000, guid: 0f249c562e784f5449669c1e2599886f, type: 3}

@@ -9,6 +9,7 @@ using UnityEngine.U2D;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Block : MonoBehaviour {
     public BlockType type;
+    public AudioSource AudioSource;
     private SpriteRenderer spriteRenderer;
     private int hp;
 
@@ -20,7 +21,11 @@ public class Block : MonoBehaviour {
 
     private void OnValidate() {
         if (type is null) {
-            Debug.LogError("Block type cannot be null");
+            Debug.LogError("Block type cannot be null.");
+            return;
+        }
+        if (AudioSource is null) {
+            Debug.LogError("Audio source not set.");
             return;
         }
         SetSprite();
@@ -38,7 +43,8 @@ public class Block : MonoBehaviour {
         spriteRenderer.color = type.Color;
     }
 
-    public void BlockHit() { // TODO: Implement damage value from ball ?
+    public void BlockHit() {
+        AudioSource.PlayOneShot(type.HitSound);
         if (!type.Destructible) return;
 
         hp--;
@@ -53,7 +59,9 @@ public class Block : MonoBehaviour {
                 Instantiate(powerUp, transform.position, transform.rotation);
             }
         }
-
+        
+        GameplayManager.Events.PublishScoreChange(+type.Value);
+        GameplayManager.Events.PublishBlockDestroyed();
         Destroy(this.gameObject);
     }
 }

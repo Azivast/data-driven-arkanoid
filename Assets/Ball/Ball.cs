@@ -24,7 +24,11 @@ public class Ball : MonoBehaviour
             Debug.LogWarning("Speed must be a non negative number");
         }
     }
-    
+
+    private void OnEnable() {
+        GameplayManager.Events.PublishBallAmountChange(+1);
+    }
+
     void FixedUpdate() {
         rigidBody.velocity = velocity;
     }
@@ -51,6 +55,10 @@ public class Ball : MonoBehaviour
         
         newDirection = Vector2.Reflect(velocity, collisionNormal);
         velocity = newDirection.normalized* speed;
+    }
+    
+    private void OnDisable() {
+        GameplayManager.Events.PublishBallAmountChange(-1);
     }
 }
 

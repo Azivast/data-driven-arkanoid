@@ -22,3 +22,5 @@ slider: https://docs.unity3d.com/ScriptReference/RangeAttribute.html
 collision layers: https://www.youtube.com/watch?v=jqOODuCfMac, https://docs.unity3d.com/2021.1/Documentation/Manual/LayerBasedCollision.html
 
 font: https://opengameart.org/content/minimalist-pixel-fonts
+
+prefab variant för projectiler: https://docs.unity3d.com/Manual/PrefabVariants.html

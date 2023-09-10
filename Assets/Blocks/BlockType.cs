@@ -16,6 +16,7 @@ public class BlockType : ScriptableObject
     public int ChanceOfPowerUp = 1;
     [Tooltip("The set of power-ups that could drop.")]
     public PowerUpSet PowerUpSet;
+    public AudioClip HitSound;
 
     private void OnValidate() {
         if (Sprite is null) Debug.LogError("Sprite cannot be null");

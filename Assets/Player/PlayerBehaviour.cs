@@ -9,8 +9,6 @@ using UnityEngine.UIElements;
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerBehaviour : MonoBehaviour {
-    [Tooltip("The number of balls the player can lose before the game is over. (Minimum: 1)")] [SerializeField]
-    private int health = 3;
 
     [Tooltip("Movement speed (non negative value).")] [SerializeField]
     private float speed = 1;
@@ -18,8 +16,11 @@ public class PlayerBehaviour : MonoBehaviour {
     [Tooltip("Initial Width of the bar.")]
     public float Size = 1;
 
-    [Tooltip("Reference to the rigid body(required).")] [SerializeField]
+    [Tooltip("Prefab of the ball to spawn with.")] [SerializeField]
     private GameObject ball = null;
+    
+    [Tooltip("Where ball will spawn.")] [SerializeField]
+    private Transform ballPosition;
     
     [Tooltip("Direction in which ball is fired at start.")] [SerializeField]
     private Vector2 ballFiringDirection = new Vector2(1, 2);
@@ -34,13 +35,9 @@ public class PlayerBehaviour : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
 
     private Vector2 movement;
+    [SerializeField] private GameObject ballReference;
 
     public void OnValidate() {
-        if (health < 1) {
-            health = 1;
-            Debug.LogWarning("Health can not be 0 or a negative number.");
-        }
-
         if (speed < 0) {
             speed = 0;
             Debug.LogWarning("Speed must be a non negative number");
@@ -54,21 +51,20 @@ public class PlayerBehaviour : MonoBehaviour {
         if (rigidBody is null) {
             Debug.LogWarning("Rigidbody cannot be null");
         }
-        
-        Start();
     }
 
     private void Start() {
         SetSize(Size);
+        SpawnBall();
     }
 
     private void FixedUpdate() {
         movement = GetInput();
         movement *= speed * Time.fixedDeltaTime;
-        // Shoot Ball
-        if (ball is not null) {
-            //ball.GetComponent<Ball>().Velocity = Vector2.zero;  // TODO: Optimize
-            ball.transform.position = new Vector3(transform.position.x, ball.transform.position.y);
+        
+        // Move attached ball
+        if (ballReference is not null) {
+            ballReference.transform.position = ballPosition.position;
             if (Input.GetKey("space")) ShootBall();
         }
 
@@ -92,9 +88,10 @@ public class PlayerBehaviour : MonoBehaviour {
     }
 
     private void ShootBall() {
-        ball.GetComponent<Ball>().Velocity = ballFiringDirection.normalized * Time.fixedDeltaTime; // TODO: Optimize
-        ball.transform.parent = null;
-        ball = null;
+        Debug.Log("Shot ball");
+        ballReference.GetComponent<Ball>().Velocity = ballFiringDirection.normalized;
+        ballReference.transform.parent = null;
+        ballReference = null;
     }
 
     public void SetSize(float size) {
@@ -104,5 +101,20 @@ public class PlayerBehaviour : MonoBehaviour {
 
     private void HandleMovement(Vector2 velocity) {
         rigidBody.velocity = velocity;
+    }
+
+    public void OnDeath() {
+        SpawnBall();
+    }
+
+    private void SpawnBall() {
+        Debug.Log("Spawning ball");
+        ballReference = Instantiate(ball, transform, false);
+    }
+    
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(256, 256, 256, 70);
+        Gizmos.DrawSphere(ballPosition.position, 0.1f);
     }
 }
