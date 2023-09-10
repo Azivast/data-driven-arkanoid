@@ -10,6 +10,10 @@ using UnityEngine.U2D;
 public class Block : MonoBehaviour {
     public BlockType type;
     public AudioSource AudioSource;
+    [Tooltip("Duration of camera shake upon destroy.")] [SerializeField]
+    private float camShakeDuration = 0.05f;
+    [Tooltip("Intensity of camera shake upon destroy.")] [SerializeField]
+    private float camShakeIntensity = 0.1f;
     private SpriteRenderer spriteRenderer;
     private int hp;
 
@@ -62,6 +66,7 @@ public class Block : MonoBehaviour {
         
         GameplayManager.Events.PublishScoreChange(+type.Value);
         GameplayManager.Events.PublishBlockDestroyed();
+        CameraShake.Shake(camShakeDuration, camShakeIntensity);
         Destroy(this.gameObject);
     }
 }

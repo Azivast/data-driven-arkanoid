@@ -24,3 +24,6 @@ collision layers: https://www.youtube.com/watch?v=jqOODuCfMac, https://docs.unit
 font: https://opengameart.org/content/minimalist-pixel-fonts
 
 prefab variant för projectiler: https://docs.unity3d.com/Manual/PrefabVariants.html
+
+The art of Screenshake: https://www.youtube.com/watch?v=AJdEqssNZ-U
+Screenshake: https://www.youtube.com/watch?v=BQGTdRhGmE4

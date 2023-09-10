@@ -30,15 +30,31 @@ public class GameplayManager : MonoBehaviour
     }
 
     private void LoadNextLevel() {
+        StartCoroutine(WaitLoadNextLevel());
+    }
+
+    private void LoadGameOver() {
+        StartCoroutine(WaitGameOver());
+    }
+    
+    IEnumerator WaitLoadNextLevel()
+    {
+        
+        yield return new WaitForSeconds(4);
+
         Destroy(currentLevelPrefab);
         currentLevelID++;
         if (currentLevelID >= levelSet.Levels.Length) {
             SceneManager.LoadScene(WinScene);
         }
-        currentLevelPrefab = Instantiate(levelSet.Levels[currentLevelID]);
+        else currentLevelPrefab = Instantiate(levelSet.Levels[currentLevelID]);
     }
+    
+    IEnumerator WaitGameOver()
+    {
+        
+        yield return new WaitForSeconds(1);
 
-    private void LoadGameOver() {
         SceneManager.LoadScene(GameOverScene);
     }
 }
