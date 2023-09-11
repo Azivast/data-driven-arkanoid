@@ -1,20 +1,21 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerBehaviour))]
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(AudioSource))]
 public class PlayerPowerUpHandler : MonoBehaviour {
+    [Tooltip("Currently active power-up")] [SerializeField]
     public GameObject ActivePowerup;
+
     [Tooltip("Duration of camera shake.")] [SerializeField]
     private float camShakeDuration = 0.2f;
+
     [Tooltip("Intensity of camera shake.")] [SerializeField]
     private float camShakeIntensity = 0.3f;
-    public AudioClip PickUpSound;
+
+    [Tooltip("Sound played when picking up a power up.")] [SerializeField]
+    private AudioClip PickUpSound;
+    
     private AudioSource audioSource;
 
     private void Start() {
@@ -25,9 +26,7 @@ public class PlayerPowerUpHandler : MonoBehaviour {
         if (col.gameObject.CompareTag("powerupCapsule")) {
             audioSource.PlayOneShot(PickUpSound);
 
-            if (ActivePowerup is not null) {
-                Destroy(ActivePowerup);
-            }
+            if (ActivePowerup is not null) Destroy(ActivePowerup);
 
             ActivePowerup = Instantiate(col.gameObject.GetComponent<PowerupCapsule>().Powerup, transform);
             ActivePowerup.SetActive(true);

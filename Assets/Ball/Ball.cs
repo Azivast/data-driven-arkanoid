@@ -31,16 +31,22 @@ public class Ball : MonoBehaviour {
     }
 
     private void OnValidate() {
-        if (rigidBody is null) Debug.LogError("Sprite cannot be null");
         if (speed < 0) {
             speed = 0;
             Debug.LogWarning("Speed must be a non negative number");
         }
+        if (rigidBody is null) Debug.LogError("Sprite cannot be null");
+        
+        if (bounceSound is null) Debug.LogError("Bounce sound cannot be null");
     }
 
     private void OnEnable() {
         GameplayManager.Events.PublishBallAmountChange(+1);
-
+    }
+    
+    private void OnDisable() {
+        GameplayManager.Events.PublishBallAmountChange(-1);
+        Debug.Log("Ball Destroyed");
     }
 
     void FixedUpdate() {
@@ -48,12 +54,12 @@ public class Ball : MonoBehaviour {
 
         rigidBody.velocity = rigidBody.velocity.normalized * speed;
 
-        // The ball can in some edge cases get a strictly horizontal velocity which is unwanted.
+        // The ball can in some edge cases get a strictly horizontal velocity which is unplayable,
+        // fix by moving it slightly downwards in that case.
         if (rigidBody.velocity.y < minYSpeed && rigidBody.velocity.y > -minYSpeed )
         {
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, -minYSpeed).normalized * speed;
         }
-        
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
@@ -67,9 +73,5 @@ public class Ball : MonoBehaviour {
         rigidBody.velocity = direction.normalized * speed;
         transform.parent = null;
         moving = true;
-    }
-
-    private void OnDisable() {
-        GameplayManager.Events.PublishBallAmountChange(-1);
     }
 }

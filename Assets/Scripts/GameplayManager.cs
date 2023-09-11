@@ -1,33 +1,35 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms.Impl;
 
 [Serializable]
 public class GameplayManager : MonoBehaviour {
+    public static Events Events = new();
+
     [Tooltip("The number of balls the player can lose before the game is over. (Minimum: 1)")] [SerializeField]
     public int playerStartingHealth = 3;
-    [SerializeField] private LevelSet levelSet;
-    [SerializeField] private string GameOverScene;
-    [SerializeField] private string WinScene;
-    public static Events Events = new Events();
-    
-    private int currentLevelID = 0;
+
+    [Tooltip("Set of levels that will be played.")] [SerializeField]
+    private LevelSet levelSet;
+    [Tooltip("Scene if player looses.")] [SerializeField]
+    private string GameOverScene;
+    [Tooltip("Scene if player wins.")] [SerializeField]
+    private string WinScene;
+    [Tooltip("UI element activated once the level has been completed.")] [SerializeField]
+    private GameObject LevelComplete;
+
+    private int currentLevelID;
     private GameObject currentLevelPrefab;
-    [SerializeField]private GameObject LevelComplete;
 
     private void Start() {
         PlayerStats.Reset(playerStartingHealth);
-        Debug.Log($"Starting game with {PlayerStats.Health} player HP.");
-        
         currentLevelPrefab = Instantiate(levelSet.Levels[currentLevelID]);
         // Update UI Elements
         Events.PublishHealthChange(0);
         Events.PublishScoreChange(0);
     }
-    
+
     private void OnEnable() {
         Events.OnLevelComplete += LoadNextLevel;
         Events.OnGameOver += LoadGameOver;
@@ -45,9 +47,8 @@ public class GameplayManager : MonoBehaviour {
     private void LoadGameOver() {
         StartCoroutine(WaitGameOver());
     }
-    
-    IEnumerator WaitLoadNextLevel()
-    {
+
+    private IEnumerator WaitLoadNextLevel() {
         LevelComplete.SetActive(true);
         Time.timeScale = 0.05f;
         yield return new WaitForSecondsRealtime(4);
@@ -57,18 +58,15 @@ public class GameplayManager : MonoBehaviour {
         Destroy(currentLevelPrefab);
         currentLevelID++;
         if (currentLevelID >= levelSet.Levels.Length) {
-            Debug.Log("Loading win screen.");
             SceneManager.LoadScene(WinScene);
         }
         else {
-            Debug.Log("Loading next level.");
             currentLevelPrefab = Instantiate(levelSet.Levels[currentLevelID]);
             LevelComplete = GameObject.FindWithTag("levelComplete");
         }
     }
-    
-    IEnumerator WaitGameOver()
-    {
+
+    private IEnumerator WaitGameOver() {
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(2);
         Time.timeScale = 1;

@@ -3,23 +3,43 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class WeaponBehaviour : MonoBehaviour
 {
-    public float FireRate;
-    public GameObject Projectile;
-    public Transform[] FiringPositions;
-    public AudioSource firingSound;
+    [Tooltip("How often bullets are fired.")] [SerializeField]
+    private float FireRate;
+    [Tooltip("Prefab of the bullet.")] [SerializeField]
+    private GameObject Projectile;
+    [Tooltip("Positions at where bullers will be spawned.")] [SerializeField]
+    private Transform[] FiringPositions;
+    [Tooltip("Sound played when firing.")] [SerializeField]
+    private AudioSource firingSound;
     
     private float timer = 0;
     private bool counting = false;
+    private PlayerControls controls;
+    private InputAction fire;
+    
+    private void Awake() {
+        controls = new PlayerControls();
+    }
+    
+    private void OnEnable() {
+        fire = controls.Player.Fire;
+        fire.Enable();
+    }
+
+    private void OnDisable() {
+        fire.Disable();
+    }
     
     public void FixedUpdate()
     {
         if (counting) timer -= Time.fixedDeltaTime;
         if (timer <= 0) counting = false;
 
-        if (Input.GetKey("space") && timer <= 0) // TODO: use input manager?
+        if (fire.ReadValue<float>() != 0 && timer <= 0)
             Shoot();
     }
 

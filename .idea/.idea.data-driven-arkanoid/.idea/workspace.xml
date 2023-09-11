@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -7,21 +10,26 @@
     <list default="true" id="fdb37b80-0c1b-4ed6-ba1f-4809cb5ef93f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ball/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/BlockType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/BlockType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Objects/DeathWall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Objects/DeathWall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Scripts/LevelSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Scripts/LevelSet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerHealthHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerDeathHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerHealthHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerDeathHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Buttons/Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Buttons/Button.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/GUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/GUI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/GameOver.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Win.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Win.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerDeathHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerDeathHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerPowerUpHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerPowerUpHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/PowerupCapsule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/PowerupCapsule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Effects/BallsPowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Effects/BallsPowerUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Effects/SizePowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Effects/SizePowerUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Effects/WeaponPowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Effects/WeaponPowerUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/PowerUpSet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/PowerUpSet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Projectiles/ProjectileBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Projectiles/ProjectileBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/HealthBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/ScoreText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/ScoreText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Weapons/WeaponBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Weapons/WeaponBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +158,7 @@
       <workItem from="1694430097431" duration="366000" />
       <workItem from="1694430556214" duration="6161000" />
       <workItem from="1694446510817" duration="457000" />
+      <workItem from="1694452271560" duration="862000" />
     </task>
     <servers />
   </component>

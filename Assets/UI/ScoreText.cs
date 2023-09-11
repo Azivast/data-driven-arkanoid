@@ -6,8 +6,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ScoreText : MonoBehaviour {
-    [SerializeField]private TMP_Text text;
-    [SerializeField]private string ScorePrefix = "SCORE: ";
+    [Tooltip("Text object")] [SerializeField]
+    private TMP_Text text;
+    
+    [Tooltip("String that supersedes the actual score number.")] [SerializeField]
+    private string scorePrefix = "SCORE: ";
 
     private void Awake() {
         ScoreChange(PlayerStats.Score);
@@ -21,6 +24,6 @@ public class ScoreText : MonoBehaviour {
     }
 
     private void ScoreChange(int newScore) {
-        text.text = ScorePrefix + newScore.ToString();
+        text.text = scorePrefix + newScore.ToString();
     }
 }

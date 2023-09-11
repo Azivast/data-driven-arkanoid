@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthBar : MonoBehaviour {
-    [SerializeField]private GameObject[] sprites;
+    [Tooltip("HP sprites")] [SerializeField]
+    private GameObject[] sprites;
 
     private void OnEnable() {
         GameplayManager.Events.OnHealthChange += UpdateHealth;
@@ -23,5 +24,4 @@ public class HealthBar : MonoBehaviour {
             sprites[i].SetActive(true);
         }
     }
-
 }

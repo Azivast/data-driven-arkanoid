@@ -6,8 +6,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
-public class ProjectileBehaviour : MonoBehaviour
-{
+public class ProjectileBehaviour : MonoBehaviour {
     public int Speed;
 
     private void FixedUpdate() {
@@ -18,6 +17,7 @@ public class ProjectileBehaviour : MonoBehaviour
         if (col.collider.CompareTag("block")) {
             col.gameObject.GetComponent<Block>().BlockHit();
         }
+
         Destroy(this.gameObject);
     }
 }

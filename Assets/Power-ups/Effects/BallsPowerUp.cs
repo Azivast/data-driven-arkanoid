@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallsPowerUp : MonoBehaviour
-{
+public class BallsPowerUp : MonoBehaviour {
     [Tooltip("The amount of balls to spawn on each ball.")]
     public int SpawnAmount = 1;
 

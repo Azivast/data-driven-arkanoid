@@ -1,22 +1,31 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
-using UnityEngine.U2D;
+using Random = System.Random;
 
 [ExecuteAlways]
 [RequireComponent(typeof(SpriteRenderer))]
 public class Block : MonoBehaviour {
+    [Tooltip("Type of block.")] 
     public BlockType type;
+
     [Tooltip("Duration of camera shake upon destroy.")] [SerializeField]
     private float camShakeDuration = 0.05f;
+
     [Tooltip("Intensity of camera shake upon destroy.")] [SerializeField]
     private float camShakeIntensity = 0.1f;
+
     private SpriteRenderer spriteRenderer;
     private AudioSource audioSource;
     private int hp;
+
+    private void OnValidate() {
+        if (type is null) {
+            Debug.LogError("Block type cannot be null.");
+            return;
+        }
+
+        SetSprite();
+    }
 
     private void Start() {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -25,18 +34,8 @@ public class Block : MonoBehaviour {
         hp = type.Health;
     }
 
-    private void OnValidate() {
-        if (type is null) {
-            Debug.LogError("Block type cannot be null.");
-            return;
-        }
-        SetSprite();
-    }
-
     private void OnCollisionExit2D(Collision2D other) {
-        if (other.gameObject.CompareTag("ball")) {
-            BlockHit();
-        }
+        if (other.gameObject.CompareTag("ball")) BlockHit();
     }
 
     private void SetSprite() {
@@ -55,19 +54,19 @@ public class Block : MonoBehaviour {
 
         // Power-up drops
         if (type.PowerUpSet is not null) { // not all block types must have power-ups
-            System.Random rand = new System.Random();
+            var rand = new Random();
             if (type.ChanceOfPowerUp != 0 && rand.Next(1, 100) <= type.ChanceOfPowerUp) {
-                GameObject powerUp =
+                var powerUp =
                     type.PowerUpSet.PowerupCapsules[rand.Next(0, type.PowerUpSet.PowerupCapsules.Count())];
                 Instantiate(powerUp, transform.position, transform.rotation);
             }
         }
-        GameplayManager.Events.PublishScoreChange(+type.Value);
-        Destroy(this.gameObject);
-    }
 
-    private void OnDestroy()
-    { 
+        GameplayManager.Events.PublishScoreChange(+type.Value);
+        Destroy(gameObject);
+    }
+    
+    private void OnDestroy() {
         GameplayManager.Events.PublishBlockDestroyed();
     }
 }

@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class SizePowerUp : MonoBehaviour {
@@ -10,19 +6,19 @@ public class SizePowerUp : MonoBehaviour {
 
     private PlayerBehaviour player;
 
-    void OnValidate() {
+    private void OnValidate() {
         if (NewSize < 1) {
             Debug.LogWarning("New size cannot be below 1.");
             NewSize = 1;
         }
     }
-
-    void OnEnable() {
+    
+    private void OnEnable() {
         player = GetComponentInParent<PlayerBehaviour>();
         player.SetSize(NewSize);
     }
 
-    void OnDisable() {
+    private void OnDisable() {
         player.SetSize(player.Size);
     }
 }

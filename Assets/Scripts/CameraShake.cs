@@ -1,30 +1,28 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class CameraShake : MonoBehaviour {
-    public AnimationCurve curve;
-    public static bool shaking = false;
+    [Tooltip("Curve of shake strength.")] [SerializeField]
+    private AnimationCurve curve;
     
+    private static bool shaking;
     private static float duration = 1f;
     private static float intensity = 1f;
-
+    
     private void Update() {
         if (shaking) {
             shaking = false;
             StartCoroutine(DoShake(duration, intensity));
         }
     }
-    IEnumerator DoShake(float duration, float intensity = 1) {
-        Vector3 initialPos = transform.position;
-        float elapsedTime = 0f;
-        
+
+    private IEnumerator DoShake(float duration, float intensity = 1) {
+        var initialPos = transform.position;
+        var elapsedTime = 0f;
+
         while (elapsedTime < duration) {
             elapsedTime += Time.deltaTime;
-            float modifier = curve.Evaluate(elapsedTime / duration) * intensity;
+            var modifier = curve.Evaluate(elapsedTime / duration) * intensity;
             transform.position = initialPos + (Vector3)Random.insideUnitCircle * modifier;
             yield return null;
         }

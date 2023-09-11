@@ -1,36 +1,26 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Numerics;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
-using Vector2 = UnityEngine.Vector2;
-using Vector3 = UnityEngine.Vector3;
 
 [RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerBehaviour : MonoBehaviour {
-
     [Tooltip("Movement speed (non negative value).")] [SerializeField]
     private float speed = 1;
 
-    [Tooltip("Initial Width of the bar.")]
-    public float Size = 1;
+    [Tooltip("Initial Width of the bar.")] public float Size = 1;
 
     [Tooltip("Prefab of the ball to spawn with.")] [SerializeField]
-    private GameObject ball = null;
-    
+    private GameObject ball;
+
     [Tooltip("Where ball will spawn.")] [SerializeField]
     private Transform ballPosition;
-    
+
     [Tooltip("Direction in which ball is fired at start.")] [SerializeField]
-    private Vector2 ballFiringDirection = new Vector2(1, 2);
+    private Vector2 ballFiringDirection = new(1, 2);
 
     [Tooltip("Reference to the Ball when attached to player")] [SerializeField]
-    private Rigidbody2D rigidBody = null;
+    private Rigidbody2D rigidBody;
 
     [Tooltip("Reference to the Collider(required).")] [SerializeField]
     private BoxCollider2D boxCollider;
@@ -38,13 +28,11 @@ public class PlayerBehaviour : MonoBehaviour {
     [Tooltip("Reference to the Renderer(required).")] [SerializeField]
     private SpriteRenderer spriteRenderer;
 
-    private Vector2 movement;
-    private GameObject ballReference;
-    
+    public GameObject ballReference;
     private PlayerControls controls;
-    private InputAction move;
     private InputAction fire;
-    
+    private InputAction move;
+    private Vector2 movement;
 
     public void OnValidate() {
         if (speed < 0) {
@@ -57,9 +45,11 @@ public class PlayerBehaviour : MonoBehaviour {
             Debug.LogWarning("Size must be a non negative number.");
         }
 
-        if (rigidBody is null) {
-            Debug.LogWarning("Rigidbody cannot be null");
-        }
+        if (rigidBody is null) Debug.LogWarning("Rigidbody cannot be null");
+    }
+    
+    private void Awake() {
+        controls = new PlayerControls();
     }
 
     private void Start() {
@@ -67,8 +57,16 @@ public class PlayerBehaviour : MonoBehaviour {
         SpawnBall();
     }
 
-    private void Awake() {
-        controls = new PlayerControls();
+    private void FixedUpdate() {
+        movement = GetInput();
+        movement *= speed * Time.fixedDeltaTime;
+        HandleMovement(movement);
+        
+        // Move attached ball
+        if (ballReference is not null) {
+            ballReference.transform.position = ballPosition.position;
+            if (fire.ReadValue<float>() != 0) ShootBall();
+        }
     }
 
     private void OnEnable() {
@@ -83,27 +81,17 @@ public class PlayerBehaviour : MonoBehaviour {
         fire.Disable();
     }
 
-    private void FixedUpdate() {
-        movement = GetInput();
-        movement *= speed * Time.fixedDeltaTime;
-        
-        // Move attached ball
-        if (ballReference is not null) {
-            ballReference.transform.position = ballPosition.position;
-            if (fire.ReadValue<float>() != 0) ShootBall();
-        }
-        
-        HandleMovement(movement);
-    }
-
     private Vector2 GetInput() {
-        Vector2 input = Vector2.zero;
+        var input = Vector2.zero;
         input.x = move.ReadValue<Vector2>().x;
         return input;
     }
+    
+    private void HandleMovement(Vector2 velocity) {
+        rigidBody.velocity = velocity;
+    }
 
     private void ShootBall() {
-        Debug.Log("Shot ball");
         ballReference.GetComponent<Ball>().LaunchBall(ballFiringDirection);
         ballReference = null;
     }
@@ -111,10 +99,6 @@ public class PlayerBehaviour : MonoBehaviour {
     public void SetSize(float size) {
         spriteRenderer.size = new Vector2(size, spriteRenderer.size.y);
         boxCollider.size = new Vector2(size, boxCollider.size.y);
-    }
-
-    private void HandleMovement(Vector2 velocity) {
-        rigidBody.velocity = velocity;
     }
 
     public void OnDeath() {
@@ -126,8 +110,7 @@ public class PlayerBehaviour : MonoBehaviour {
         ballReference = Instantiate(ball, transform, false);
     }
     
-    private void OnDrawGizmos()
-    {
+    private void OnDrawGizmos() {
         Gizmos.color = new Color(256, 256, 256, 70);
         Gizmos.DrawSphere(ballPosition.position, 0.1f);
         Gizmos.DrawLine(ballPosition.position, ballPosition.position + (Vector3)ballFiringDirection.normalized);

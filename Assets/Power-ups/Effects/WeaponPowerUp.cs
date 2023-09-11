@@ -9,18 +9,18 @@ public class WeaponPowerUp : MonoBehaviour {
     private GameObject weaponInstance;
     private PlayerBehaviour player;
 
-    void OnValidate() {
+    private void OnValidate() {
         if (weapon is null) {
             Debug.LogError("Weapon cannot be null.");
         }
     }
 
-    void OnEnable() {
+    private void OnEnable() {
         player = GetComponentInParent<PlayerBehaviour>();
         weaponInstance = Instantiate(weapon, player.transform, false);
     }
 
-    void OnDisable() {
+    private void OnDisable() {
         Destroy(weaponInstance);
     }
 }
