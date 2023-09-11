@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.U2D;
 
 [ExecuteAlways]
@@ -46,6 +47,7 @@ public class Block : MonoBehaviour {
 
     public void BlockHit() {
         audioSource.PlayOneShot(type.HitSound);
+        CameraShake.Shake(camShakeDuration, camShakeIntensity);
         if (!type.Destructible) return;
 
         hp--;
@@ -60,10 +62,12 @@ public class Block : MonoBehaviour {
                 Instantiate(powerUp, transform.position, transform.rotation);
             }
         }
-        
         GameplayManager.Events.PublishScoreChange(+type.Value);
-        GameplayManager.Events.PublishBlockDestroyed();
-        CameraShake.Shake(camShakeDuration, camShakeIntensity);
         Destroy(this.gameObject);
+    }
+
+    private void OnDestroy()
+    { 
+        GameplayManager.Events.PublishBlockDestroyed();
     }
 }

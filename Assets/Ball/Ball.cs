@@ -13,18 +13,22 @@ public class Ball : MonoBehaviour {
 
     [Tooltip("Sound when ball bounces on player.")] [SerializeField]
     private AudioClip bounceSound;
+    
+    [Tooltip("Minimum y direction ball can have. (Prevents it getting stuck)")] [SerializeField]
+    private float yMinDir = 0.5f;
 
     private AudioSource audioSource;
-
-    private Vector2 velocity = Vector2.zero;
+    private bool moving = true;
 
     public Vector2 Velocity {
-        get => velocity;
-        set => velocity = value.normalized * speed;
+        get => rigidBody.velocity;
+        set => rigidBody.velocity = value;
     }
 
+    
     private void Start() {
         audioSource = GetComponent<AudioSource>();
+        if (transform.parent is not null) moving = false;
     }
 
     private void OnValidate() {
@@ -37,34 +41,33 @@ public class Ball : MonoBehaviour {
 
     private void OnEnable() {
         GameplayManager.Events.PublishBallAmountChange(+1);
+
     }
 
     void FixedUpdate() {
-        rigidBody.velocity = velocity;
+        if (moving == false) return;
+
+        rigidBody.velocity = rigidBody.velocity.normalized * speed;
+
+        // The ball can in some edge cases get a strictly horizontal velocity which is unwanted.
+        if (rigidBody.velocity.y < yMinDir && rigidBody.velocity.y > -yMinDir )
+        {
+            rigidBody.velocity = new Vector2(rigidBody.velocity.x, -yMinDir).normalized * speed;
+        }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        Vector2 newDirection;
+        if (!other.gameObject.CompareTag("player")) return;
+        audioSource.PlayOneShot(bounceSound);
+        Vector2 newDirection = transform.position - other.transform.position;
+        rigidBody.velocity = newDirection.normalized * speed;
+    }
 
-        // Player collision
-        if (other.gameObject.CompareTag("player")) {
-            audioSource.PlayOneShot(bounceSound);
-            newDirection = transform.position - other.transform.position;
-            //newDirection += Vector2.up; // Make ball always move a little more up than horizontal
-            velocity = newDirection.normalized * speed;
-            return;
-        }
-
-        // Other collisions TODO: This is a bit broken?
-        Vector2 collisionNormal = new Vector2();
-        foreach (ContactPoint2D contact in other.contacts) {
-            collisionNormal += contact.normal;
-        }
-
-        collisionNormal.Normalize();
-
-        newDirection = Vector2.Reflect(velocity, collisionNormal);
-        velocity = newDirection.normalized * speed;
+    public void LaunchBall(Vector2 direction) {
+        rigidBody.velocity = direction.normalized * speed;
+        transform.parent = null;
+        moving = true;
     }
 
     private void OnDisable() {

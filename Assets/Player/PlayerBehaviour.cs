@@ -35,7 +35,8 @@ public class PlayerBehaviour : MonoBehaviour {
     private SpriteRenderer spriteRenderer;
 
     private Vector2 movement;
-    [SerializeField] private GameObject ballReference;
+    private GameObject ballReference;
+    
 
     public void OnValidate() {
         if (speed < 0) {
@@ -89,8 +90,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
     private void ShootBall() {
         Debug.Log("Shot ball");
-        ballReference.GetComponent<Ball>().Velocity = ballFiringDirection.normalized;
-        ballReference.transform.parent = null;
+        ballReference.GetComponent<Ball>().LaunchBall(ballFiringDirection);
         ballReference = null;
     }
 
@@ -116,5 +116,6 @@ public class PlayerBehaviour : MonoBehaviour {
     {
         Gizmos.color = new Color(256, 256, 256, 70);
         Gizmos.DrawSphere(ballPosition.position, 0.1f);
+        Gizmos.DrawLine(ballPosition.position, ballPosition.position + (Vector3)ballFiringDirection.normalized);
     }
 }

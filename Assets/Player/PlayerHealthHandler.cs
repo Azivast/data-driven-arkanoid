@@ -37,8 +37,8 @@ public class PlayerHealthHandler : MonoBehaviour
         CameraShake.Shake(cameraShakeDuration, cameraShakeIntensity);
         
         GameplayManager.Events.PublishHealthChange(-1);
-
-        behaviour.OnDeath();
+        
         if (health <= 0) GameplayManager.Events.PublishGameOver();
+        else behaviour.OnDeath();
     }
 }

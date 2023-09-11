@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public static class PlayerStats {
-    public static int Score;
+    private static int score;
     public static int Health;
 
+    public static int Score {
+        get => score;
+        set => score = value;
+    }
+
     public static void Reset(int health) {
-        Score = 0;
+        score = 0;
         Health = health;
     }
 }
