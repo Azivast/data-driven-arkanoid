@@ -7,18 +7,21 @@
     <list default="true" id="fdb37b80-0c1b-4ed6-ba1f-4809cb5ef93f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ball/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ball/Ball.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerHealthHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerHealthHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerHealthHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerDeathHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerHealthHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerDeathHandler.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI/Buttons/Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Buttons/Button.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI/GUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/GUI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/GameOver.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI/Win.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Win.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +32,15 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f712b1dc50b4468388b9c5f95d0d0eaf159e00/a4/c9b622fa/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f712b1dc50b4468388b9c5f95d0d0eaf159e00/cd/b82fc0aa/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f712b1dc50b4468388b9c5f95d0d0eaf159e00/ee/cacf269d/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Player/PlayerHealthHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Player/PlayerDeathHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/PlayerPowerUpHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Projectiles/ProjectileBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/Buttons/ChangeSceneButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/Buttons/QuitButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UI/ScoreText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -144,6 +149,7 @@
       <workItem from="1694417979155" duration="5469000" />
       <workItem from="1694430097431" duration="366000" />
       <workItem from="1694430556214" duration="6161000" />
+      <workItem from="1694446510817" duration="457000" />
     </task>
     <servers />
   </component>

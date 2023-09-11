@@ -6,7 +6,7 @@ using UnityEngine;
 [Serializable]
 [RequireComponent(typeof(PlayerBehaviour))]
 [RequireComponent(typeof(AudioSource))]
-public class PlayerHealthHandler : MonoBehaviour
+public class PlayerDeathHandler : MonoBehaviour
 {
     [Tooltip("Sound played when player dies.")] [SerializeField]
     private AudioClip DeathSound;

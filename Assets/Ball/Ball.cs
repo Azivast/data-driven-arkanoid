@@ -14,8 +14,8 @@ public class Ball : MonoBehaviour {
     [Tooltip("Sound when ball bounces on player.")] [SerializeField]
     private AudioClip bounceSound;
     
-    [Tooltip("Minimum y direction ball can have. (Prevents it getting stuck)")] [SerializeField]
-    private float yMinDir = 0.5f;
+    [Tooltip("Minimum y speed ball can have. (Prevents it from getting stuck)")] [SerializeField]
+    private float minYSpeed = 0.5f;
 
     private AudioSource audioSource;
     private bool moving = true;
@@ -25,7 +25,6 @@ public class Ball : MonoBehaviour {
         set => rigidBody.velocity = value;
     }
 
-    
     private void Start() {
         audioSource = GetComponent<AudioSource>();
         if (transform.parent is not null) moving = false;
@@ -50,9 +49,9 @@ public class Ball : MonoBehaviour {
         rigidBody.velocity = rigidBody.velocity.normalized * speed;
 
         // The ball can in some edge cases get a strictly horizontal velocity which is unwanted.
-        if (rigidBody.velocity.y < yMinDir && rigidBody.velocity.y > -yMinDir )
+        if (rigidBody.velocity.y < minYSpeed && rigidBody.velocity.y > -minYSpeed )
         {
-            rigidBody.velocity = new Vector2(rigidBody.velocity.x, -yMinDir).normalized * speed;
+            rigidBody.velocity = new Vector2(rigidBody.velocity.x, -minYSpeed).normalized * speed;
         }
         
     }

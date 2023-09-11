@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 7114049942856595340}
   - component: {fileID: 2520100469538683899}
   - component: {fileID: 861344905730806535}
+  - component: {fileID: 5801676510948401508}
   - component: {fileID: 7114049942856595342}
   - component: {fileID: 5301780433524044060}
   - component: {fileID: 6656360919929614737}
@@ -90,7 +91,15 @@ MonoBehaviour:
   rigidBody: {fileID: 7114049942856595342}
   boxCollider: {fileID: 6656360919929614737}
   spriteRenderer: {fileID: 5301780433524044060}
-  ballReference: {fileID: 0}
+  playerControls:
+    m_Name: Player Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ca2de4dc-5543-4eaa-b6e8-59551aa51c5b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!114 &2520100469538683899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +131,36 @@ MonoBehaviour:
   camShakeDuration: 0.2
   camShakeIntensity: 0.3
   PickUpSound: {fileID: 8300000, guid: 8287d479f0870244884f7d58c06d1c89, type: 3}
+--- !u!114 &5801676510948401508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7114049942856595343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: c1fe30f4803d2054dad026097d3bda27, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!50 &7114049942856595342
 Rigidbody2D:
   serializedVersion: 4

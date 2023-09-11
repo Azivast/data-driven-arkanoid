@@ -2,9 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Numerics;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
@@ -37,6 +41,10 @@ public class PlayerBehaviour : MonoBehaviour {
     private Vector2 movement;
     private GameObject ballReference;
     
+    private PlayerControls controls;
+    private InputAction move;
+    private InputAction fire;
+    
 
     public void OnValidate() {
         if (speed < 0) {
@@ -59,6 +67,22 @@ public class PlayerBehaviour : MonoBehaviour {
         SpawnBall();
     }
 
+    private void Awake() {
+        controls = new PlayerControls();
+    }
+
+    private void OnEnable() {
+        move = controls.Player.Move;
+        fire = controls.Player.Fire;
+        move.Enable();
+        fire.Enable();
+    }
+
+    private void OnDisable() {
+        move.Disable();
+        fire.Disable();
+    }
+
     private void FixedUpdate() {
         movement = GetInput();
         movement *= speed * Time.fixedDeltaTime;
@@ -66,25 +90,15 @@ public class PlayerBehaviour : MonoBehaviour {
         // Move attached ball
         if (ballReference is not null) {
             ballReference.transform.position = ballPosition.position;
-            if (Input.GetKey("space")) ShootBall();
+            if (fire.ReadValue<float>() != 0) ShootBall();
         }
-
-
-        //TODO: Verify movement and how deltaTime is used, movement is not smooth
+        
         HandleMovement(movement);
     }
 
     private Vector2 GetInput() {
         Vector2 input = Vector2.zero;
-        if (Input.GetKey("a")) // TODO: use input manager?
-        {
-            input += Vector2.left;
-        }
-
-        if (Input.GetKey("d")) {
-            input += Vector2.right;
-        }
-
+        input.x = move.ReadValue<Vector2>().x;
         return input;
     }
 
