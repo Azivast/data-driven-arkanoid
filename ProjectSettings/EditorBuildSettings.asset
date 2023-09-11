@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Gameplay.unity
     guid: 88a418305f69b034bbbf6d3333e12d98
+  - enabled: 1
+    path: Assets/UI/Win.unity
+    guid: 5e546f10e02a91746850a2952a2e7a34
   m_configObjects: {}

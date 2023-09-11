@@ -7,23 +7,39 @@
     <list default="true" id="fdb37b80-0c1b-4ed6-ba1f-4809cb5ef93f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ball/Ball.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.physicsMaterial2D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.physicsMaterial2D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ball/Ball.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Blocks/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Block.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Block.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Gameplay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/LevelEmpty.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/LevelEmpty.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Objects/Border Horizontal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Objects/Border Horizontal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Objects/Border Vertical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Objects/Border Vertical.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Objects/DeathWall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Objects/DeathWall.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/Objects/DeathWall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Objects/DeathWall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Scripts/GameplayManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Scripts/GameplayManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Scripts/LevelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerHealthHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerHealthHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerPowerUpHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerPowerUpHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/palette.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/palette.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sprites.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/sprites.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Disruption Capsule.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Disruption Capsule.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Enlarge Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Enlarge Capsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Enlarge Capsule.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Enlarge Capsule.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Laser Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Laser Capsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Laser Capsule.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Laser Capsule.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/PowerupCapsule.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/PowerupCapsule.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/DefaultPowerUpSet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/DefaultPowerUpSet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Projectiles/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Projectiles/Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Buttons/Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Buttons/Button.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Font/Minimal5x7 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Font/Minimal5x7 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/GUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/GUI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/GameOver.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/ScoreText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/ScoreText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Win.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Win.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +160,9 @@
       <workItem from="1694278150231" duration="13702000" />
       <workItem from="1694341041521" duration="837000" />
       <workItem from="1694341909275" duration="11453000" />
-      <workItem from="1694353506925" duration="15988000" />
+      <workItem from="1694353506925" duration="16532000" />
+      <workItem from="1694414376321" duration="2920000" />
+      <workItem from="1694417979155" duration="5469000" />
     </task>
     <servers />
   </component>

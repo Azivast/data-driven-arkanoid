@@ -50,7 +50,7 @@ public class Ball : MonoBehaviour {
         if (other.gameObject.CompareTag("player")) {
             audioSource.PlayOneShot(bounceSound);
             newDirection = transform.position - other.transform.position;
-            newDirection += Vector2.up; // Make ball always move a little more up than horizontal
+            //newDirection += Vector2.up; // Make ball always move a little more up than horizontal
             velocity = newDirection.normalized * speed;
             return;
         }

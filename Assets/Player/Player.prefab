@@ -90,7 +90,6 @@ MonoBehaviour:
   rigidBody: {fileID: 7114049942856595342}
   boxCollider: {fileID: 6656360919929614737}
   spriteRenderer: {fileID: 5301780433524044060}
-  bounceSound: {fileID: 8300000, guid: 44a3909153d176f4fa8a8c76f0bdd9af, type: 3}
   ballReference: {fileID: 0}
 --- !u!114 &2520100469538683899
 MonoBehaviour:
@@ -104,7 +103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f651404c1ea647a4a84b1e83fb62c257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
   DeathSound: {fileID: 8300000, guid: 7e80f66e197268c47b546a9573f89d4f, type: 3}
   cameraShakeDuration: 1
   cameraShakeIntensity: 1
@@ -141,7 +139,7 @@ Rigidbody2D:
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 6

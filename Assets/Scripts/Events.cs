@@ -15,16 +15,15 @@ public class Events {
     public event DefaultDelegate OnLevelComplete;
     public event DefaultDelegate OnPlayerDeath;
 
-    private static int score;
-
     // Call from other classes
     public void PublishScoreChange(int scoreChange) {
-        score += scoreChange;
-        OnScoreChange?.Invoke(score);
+        PlayerStats.Score += scoreChange;
+        OnScoreChange?.Invoke(PlayerStats.Score);
     }
 
-    public void PublishHealthChange(int newHealth) {
-        OnHealthChange?.Invoke(newHealth);
+    public void PublishHealthChange(int healthChange) {
+        PlayerStats.Health += healthChange;
+        OnHealthChange?.Invoke(PlayerStats.Health);
     }
     
     public void PublishBallAmountChange(int ballAmountChange)

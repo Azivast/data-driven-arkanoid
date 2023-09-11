@@ -180,6 +180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cffabf52b0ce944e9508c8358045162, type: 3}
+--- !u!1 &1179757716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3188721553009740035, guid: 5cffabf52b0ce944e9508c8358045162, type: 3}
+  m_PrefabInstance: {fileID: 1179757715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1391025688
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,9 +214,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce904e2fc56f9e48983cdeff29261e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStartingHealth: 3
   levelSet: {fileID: 11400000, guid: efb96bd905d310d42bd212bcf63356c1, type: 2}
   GameOverScene: UI/GameOver
   WinScene: UI/Win
+  LevelComplete: {fileID: 1179757716}
 --- !u!4 &1391025690
 Transform:
   m_ObjectHideFlags: 0

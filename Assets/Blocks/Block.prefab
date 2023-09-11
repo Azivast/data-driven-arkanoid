@@ -48,7 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: {fileID: 11400000, guid: b0aaf97cbac54f445be8f48c8d12eb0d, type: 2}
-  AudioSource: {fileID: 0}
   camShakeDuration: 0.2
   camShakeIntensity: 0.3
 --- !u!212 &8510572631597624548

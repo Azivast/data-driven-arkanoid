@@ -9,16 +9,17 @@ using UnityEngine.U2D;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Block : MonoBehaviour {
     public BlockType type;
-    public AudioSource AudioSource;
     [Tooltip("Duration of camera shake upon destroy.")] [SerializeField]
     private float camShakeDuration = 0.05f;
     [Tooltip("Intensity of camera shake upon destroy.")] [SerializeField]
     private float camShakeIntensity = 0.1f;
     private SpriteRenderer spriteRenderer;
+    private AudioSource audioSource;
     private int hp;
 
     private void Start() {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponentInParent<AudioSource>();
         SetSprite();
         hp = type.Health;
     }
@@ -26,10 +27,6 @@ public class Block : MonoBehaviour {
     private void OnValidate() {
         if (type is null) {
             Debug.LogError("Block type cannot be null.");
-            return;
-        }
-        if (AudioSource is null) {
-            Debug.LogError("Audio source not set.");
             return;
         }
         SetSprite();
@@ -48,7 +45,7 @@ public class Block : MonoBehaviour {
     }
 
     public void BlockHit() {
-        AudioSource.PlayOneShot(type.HitSound);
+        audioSource.PlayOneShot(type.HitSound);
         if (!type.Destructible) return;
 
         hp--;

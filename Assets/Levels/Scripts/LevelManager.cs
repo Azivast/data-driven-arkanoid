@@ -9,7 +9,9 @@ public class LevelManager : MonoBehaviour {
     private int numberOfBalls = 1;
     void Start()
     {
-        GameObject[] blocks = GameObject.FindGameObjectsWithTag("block");
+        GameObject[] blocks = Array.FindAll(GameObject.FindGameObjectsWithTag("block"), 
+            b => b.GetComponent<Block>().type.Destructible);
+        
         numberOfBlocks = blocks.Length;
         
         GameplayManager.Events.OnBlockDestroyed += BlockDestroyed;
@@ -19,6 +21,8 @@ public class LevelManager : MonoBehaviour {
 
     private void BlockDestroyed() {
         numberOfBlocks--;
+        
+        Debug.Log(numberOfBlocks + " blocks left");
 
         if (numberOfBlocks <= 0) {
             GameplayManager.Events.PublishLevelComplete();

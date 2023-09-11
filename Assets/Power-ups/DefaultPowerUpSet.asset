@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DefaultPowerUpSet
   m_EditorClassIdentifier: 
   PowerupCapsules:
-  - {fileID: 3492235645933566660, guid: 530e5a745ba671840b874c2d4b059c22, type: 3}
-  - {fileID: 3492235645933566660, guid: f09798ec06c4dd74ea11bffdf8e56507, type: 3}
-  - {fileID: 3492235645933566660, guid: 8e990d81cc95dfd40bb70b8c8693c8a2, type: 3}
+  - {fileID: 6534752641560559494, guid: 4bc8e3e3a99d0ae48b1a6d24bd7d2868, type: 3}
+  - {fileID: 3404681445277106172, guid: 63c811e1e0faf694d99e5e91376170d0, type: 3}
+  - {fileID: 4131861069182768695, guid: 10e67f2558a632241a8cc708ed7de2ff, type: 3}
