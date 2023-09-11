@@ -9,12 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fdb37b80-0c1b-4ed6-ba1f-4809cb5ef93f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ball/bounce.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ball/bounce.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blocks/hit.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/hit.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blocks/hit2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/hit2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/explosion.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/explosion.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/powerUp.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/powerUp.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sprites.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/sprites.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ball/Ball.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +139,7 @@
       <workItem from="1694430556214" duration="6161000" />
       <workItem from="1694446510817" duration="457000" />
       <workItem from="1694452271560" duration="1742000" />
+      <workItem from="1694464814142" duration="818000" />
     </task>
     <servers />
   </component>

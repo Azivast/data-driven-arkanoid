@@ -46,7 +46,6 @@ public class Ball : MonoBehaviour {
     
     private void OnDisable() {
         GameplayManager.Events.PublishBallAmountChange(-1);
-        Debug.Log("Ball Destroyed");
     }
 
     void FixedUpdate() {
