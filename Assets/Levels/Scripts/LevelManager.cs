@@ -5,18 +5,15 @@ public class LevelManager : MonoBehaviour {
     private int numberOfBalls;
     private int numberOfBlocks;
 
-
-    private void Start() {
-        var blocks = Array.FindAll(GameObject.FindGameObjectsWithTag("block"),
-            b => b.GetComponent<Block>().type.Destructible);
-        numberOfBlocks = blocks.Length;
-        Debug.Log(numberOfBalls);
-    }
-
     private void OnEnable() {
         GameplayManager.Events.OnBlockDestroyed += BlockDestroyed;
         GameplayManager.Events.OnBallAmountChange += BallAmountChanged;
         GameplayManager.Events.OnPlayerDeath += ClearPowerups;
+        
+        var blocks = Array.FindAll(GameObject.FindGameObjectsWithTag("block"),
+            b => b.GetComponent<Block>().type.Destructible);
+        numberOfBlocks = blocks.Length;
+        Debug.Log($"Starting new level, found {numberOfBlocks} blocks.");
     }
 
     private void OnDisable() {
@@ -27,6 +24,7 @@ public class LevelManager : MonoBehaviour {
 
     private void BlockDestroyed() {
         numberOfBlocks--;
+        Debug.Log($"{numberOfBlocks} blocks left.");
         if (numberOfBlocks <= 0) GameplayManager.Events.PublishLevelComplete();
     }
 

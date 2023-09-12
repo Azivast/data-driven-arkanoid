@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: m_PixelPerfect
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9218687715659186593, guid: 5cffabf52b0ce944e9508c8358045162, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -20.000122
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cffabf52b0ce944e9508c8358045162, type: 3}
 --- !u!1 &1179757716 stripped

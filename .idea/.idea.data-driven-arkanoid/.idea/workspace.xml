@@ -10,6 +10,30 @@
     <list default="true" id="fdb37b80-0c1b-4ed6-ba1f-4809cb5ef93f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.data-driven-arkanoid/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ball/Ball.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ball/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ball/Ball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blocks/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blocks/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Default LevelSet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Default LevelSet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Gameplay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/LevelEmpty.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/LevelEmpty.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerControls.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/PlayerPowerUpHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/PlayerPowerUpHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Disruption Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Disruption Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Enlarge Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Enlarge Capsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Laser Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Laser Capsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Powerup Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/Powerup Capsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Capsules/PowerupCapsule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Capsules/PowerupCapsule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Power-ups/Effects/BallsPowerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Power-ups/Effects/BallsPowerUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Projectiles/ProjectileBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Projectiles/ProjectileBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameplayManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sprites(5).psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sprites(5).psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sprites.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/sprites.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +44,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f712b1dc50b4468388b9c5f95d0d0eaf159e00/a4/c9b622fa/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f712b1dc50b4468388b9c5f95d0d0eaf159e00/cd/b82fc0aa/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f712b1dc50b4468388b9c5f95d0d0eaf159e00/ee/cacf269d/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/DataDrivenArkanoid-main/Assets/Scripts/BallPowerUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/DataDrivenArkanoid-main/Assets/Scripts/Brick.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/PlayerDeathHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/PlayerPowerUpHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Projectiles/ProjectileBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
@@ -38,28 +64,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.5034325",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\a22ollas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\a22ollas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\a22ollas\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\a22ollas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\a22ollas\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\a22ollas\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/Data Driven Arkanoid Build/data-driven-arkanoid.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\o7\Desktop\Data Driven Arkanoid Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.24f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Temp\data-driven-arkanoid -debugCodeOptimization" />
@@ -94,10 +129,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21140">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="21140" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -139,7 +174,10 @@
       <workItem from="1694430556214" duration="6161000" />
       <workItem from="1694446510817" duration="457000" />
       <workItem from="1694452271560" duration="1742000" />
-      <workItem from="1694464814142" duration="818000" />
+      <workItem from="1694464814142" duration="1637000" />
+      <workItem from="1694502132014" duration="7155000" />
+      <workItem from="1694526205404" duration="1637000" />
+      <workItem from="1694551799313" duration="4289000" />
     </task>
     <servers />
   </component>

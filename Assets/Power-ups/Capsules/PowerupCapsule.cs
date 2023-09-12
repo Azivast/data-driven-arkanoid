@@ -8,10 +8,10 @@ public class PowerupCapsule : MonoBehaviour {
     private Color Color = Color.white;
 
     [Tooltip("Power up effect which will be activate upon pick-up.")]
-    public GameObject Powerup;
+    public GameObject Effect;
 
     public void OnValidate() {
-        if (Powerup is null) 
+        if (Effect is null) 
             Debug.LogError("Power up must not be null.");
 
         Start();

@@ -33,8 +33,9 @@ public class Events {
         OnPlayerDeath?.Invoke();
     }
     
-    public void PublishBlockDestroyed()
-        => OnBlockDestroyed?.Invoke();
+    public void PublishBlockDestroyed() {
+        OnBlockDestroyed?.Invoke();
+    }
     
     public void PublishGameOver()
         => OnGameOver?.Invoke();

@@ -60,6 +60,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8494884618227481767, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
+      propertyPath: Effect
+      value: 
+      objectReference: {fileID: 2210896669998853459, guid: 5c234eeb20a41654aad3b3ab36491b73, type: 3}
+    - target: {fileID: 8494884618227481767, guid: b9dd8aa41f8232849ad89803c62c441a, type: 3}
       propertyPath: Powerup
       value: 
       objectReference: {fileID: 2210896669998853459, guid: 5c234eeb20a41654aad3b3ab36491b73, type: 3}

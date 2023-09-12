@@ -9,6 +9,7 @@ TagManager:
   - player
   - powerupCapsule
   - levelComplete
+  - level
   layers:
   - Default
   - TransparentFX

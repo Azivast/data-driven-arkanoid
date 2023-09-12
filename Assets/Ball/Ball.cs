@@ -27,7 +27,7 @@ public class Ball : MonoBehaviour {
 
     private void Start() {
         audioSource = GetComponent<AudioSource>();
-        if (transform.parent is not null) moving = false;
+        if (transform.parent is not null && transform.parent.CompareTag("player")) moving = false;
     }
 
     private void OnValidate() {
@@ -70,7 +70,7 @@ public class Ball : MonoBehaviour {
 
     public void LaunchBall(Vector2 direction) {
         rigidBody.velocity = direction.normalized * speed;
-        transform.parent = null;
+        transform.parent = GameObject.FindWithTag("level").transform;
         moving = true;
     }
 }

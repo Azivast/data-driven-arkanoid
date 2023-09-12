@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FallSpeed: 2
   Color: {r: 1, g: 1, b: 1, a: 1}
-  Powerup: {fileID: 0}
+  Effect: {fileID: 0}
 --- !u!212 &2210896669998853457
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -895572241, guid: e883f97c0cac4194b815151740b5cde5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

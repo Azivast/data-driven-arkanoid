@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(AudioSource))]
 public class PlayerPowerUpHandler : MonoBehaviour {
-    [Tooltip("Currently active power-up")] [SerializeField]
+    [Tooltip("Currently active power-up")]
     public GameObject ActivePowerup;
 
     [Tooltip("Duration of camera shake.")] [SerializeField]
@@ -28,7 +28,7 @@ public class PlayerPowerUpHandler : MonoBehaviour {
 
             if (ActivePowerup is not null) Destroy(ActivePowerup);
 
-            ActivePowerup = Instantiate(col.gameObject.GetComponent<PowerupCapsule>().Powerup, transform);
+            ActivePowerup = Instantiate(col.gameObject.GetComponent<PowerupCapsule>().Effect, transform);
             ActivePowerup.SetActive(true);
             CameraShake.Shake(camShakeDuration, camShakeIntensity);
 

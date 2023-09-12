@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using Random = System.Random;
@@ -58,7 +59,7 @@ public class Block : MonoBehaviour {
             if (type.ChanceOfPowerUp != 0 && rand.Next(1, 100) <= type.ChanceOfPowerUp) {
                 var powerUp =
                     type.PowerUpSet.PowerupCapsules[rand.Next(0, type.PowerUpSet.PowerupCapsules.Count())];
-                Instantiate(powerUp, transform.position, transform.rotation);
+                Instantiate(powerUp, transform.position, transform.rotation, GameObject.FindWithTag("level").transform);
             }
         }
 
@@ -67,6 +68,6 @@ public class Block : MonoBehaviour {
     }
     
     private void OnDestroy() {
-        GameplayManager.Events.PublishBlockDestroyed();
+        if (type.Destructible) GameplayManager.Events.PublishBlockDestroyed();
     }
 }

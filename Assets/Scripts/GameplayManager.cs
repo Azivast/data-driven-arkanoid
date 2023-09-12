@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 [Serializable]
@@ -21,6 +22,13 @@ public class GameplayManager : MonoBehaviour {
 
     private int currentLevelID;
     private GameObject currentLevelPrefab;
+    
+    private PlayerControls controls;
+    private InputAction quit;
+    
+    private void Awake() {
+        controls = new PlayerControls();
+    }
 
     private void Start() {
         PlayerStats.Reset(playerStartingHealth);
@@ -33,11 +41,20 @@ public class GameplayManager : MonoBehaviour {
     private void OnEnable() {
         Events.OnLevelComplete += LoadNextLevel;
         Events.OnGameOver += LoadGameOver;
+
+        quit = controls.UI.Quit;
+        quit.Enable();
     }
 
     private void OnDisable() {
         Events.OnLevelComplete -= LoadNextLevel;
         Events.OnGameOver -= LoadGameOver;
+        
+        quit.Disable();
+    }
+
+    private void Update() {
+        if (quit.ReadValue<float>() != 0) Application.Quit();
     }
 
     private void LoadNextLevel() {
@@ -52,22 +69,21 @@ public class GameplayManager : MonoBehaviour {
         LevelComplete.SetActive(true);
         Time.timeScale = 0.05f;
         yield return new WaitForSecondsRealtime(4);
-        LevelComplete.SetActive(false);
         Time.timeScale = 1;
-
-        Destroy(currentLevelPrefab);
+        LevelComplete.SetActive(false);
+        
         currentLevelID++;
         if (currentLevelID >= levelSet.Levels.Length) {
             SceneManager.LoadScene(WinScene);
         }
         else {
+            Destroy(currentLevelPrefab);
             currentLevelPrefab = Instantiate(levelSet.Levels[currentLevelID]);
-            LevelComplete = GameObject.FindWithTag("levelComplete");
         }
     }
 
     private IEnumerator WaitGameOver() {
-        Time.timeScale = 0f;
+        Time.timeScale = 0.01f;
         yield return new WaitForSecondsRealtime(2);
         Time.timeScale = 1;
 

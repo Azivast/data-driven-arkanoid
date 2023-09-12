@@ -17,7 +17,7 @@ public class BallsPowerUp : MonoBehaviour {
         foreach (GameObject ballObject in GameObject.FindGameObjectsWithTag("ball")) {
             Ball ball = ballObject.GetComponent<Ball>();
             for (int i = 0; i < SpawnAmount; i++) {
-                var newBall = Instantiate(ball);
+                var newBall = Instantiate(ball, GameObject.FindWithTag("level").transform);
                 float speed = ball.Velocity.magnitude;
                 Vector2 randomDirection = Random.insideUnitCircle;
                 newBall.Velocity = randomDirection * speed;
